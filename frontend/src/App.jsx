@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  ShieldCheck, 
   LayoutDashboard, 
   CreditCard, 
   AlertTriangle, 
   BarChart3, 
   FlaskConical, 
-  Activity, 
-  CheckCircle2, 
-  XCircle, 
-  Lock, 
-  Search,
-  Filter
+  Bell, 
+  ChevronDown, 
+  Menu, 
+  X,
+  ShieldCheck
 } from 'lucide-react';
 
 import CustomerCheckout from './components/CustomerCheckout';
@@ -22,6 +20,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('overview');
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Fetch real events for Overview KPI calculations
   useEffect(() => {
@@ -41,92 +40,144 @@ export default function App() {
   const verifyCount = events.filter((e) => e.action === 'VERIFY').length;
   const allowCount = events.filter((e) => e.action === 'ALLOW').length;
 
+  const handleNavClick = (tabKey) => {
+    setActiveTab(tabKey);
+    setMobileMenuOpen(false);
+  };
+
   return (
     <div className="app-container">
-      {/* Left Sidebar */}
-      <aside className="sidebar">
-        <div className="sidebar-header">
+      {/* Sticky Horizontal Top Navigation Bar */}
+      <header className="top-navbar">
+        {/* LEFT: Logo & Brand Information */}
+        <div className="nav-brand-section">
           <div className="logo-badge">SF</div>
-          <div>
-            <div className="brand-name">SECUREFLOW</div>
-            <div style={{ fontSize: '11px', color: '#94a3b8' }}>Razorpay AI Security</div>
+          <div className="brand-title-group">
+            <span className="brand-name">SECUREFLOW</span>
+            <span className="brand-subtitle">Adaptive Security for Digital Payments</span>
           </div>
         </div>
 
-        <nav className="sidebar-nav">
+        {/* CENTER: Navigation Links (Exact Order Mandated) */}
+        <nav className="nav-center-menu">
           <button 
-            className={`nav-item ${activeTab === 'overview' ? 'active' : ''}`}
-            onClick={() => setActiveTab('overview')}
+            className={`nav-link ${activeTab === 'overview' ? 'active' : ''}`}
+            onClick={() => handleNavClick('overview')}
           >
-            <LayoutDashboard size={18} />
+            <LayoutDashboard size={17} />
             <span>Overview</span>
           </button>
 
           <button 
-            className={`nav-item ${activeTab === 'checkout' ? 'active' : ''}`}
-            onClick={() => setActiveTab('checkout')}
+            className={`nav-link ${activeTab === 'checkout' ? 'active' : ''}`}
+            onClick={() => handleNavClick('checkout')}
           >
-            <CreditCard size={18} />
+            <CreditCard size={17} />
             <span>Customer Checkout</span>
           </button>
 
           <button 
-            className={`nav-item ${activeTab === 'events' ? 'active' : ''}`}
-            onClick={() => setActiveTab('events')}
+            className={`nav-link ${activeTab === 'events' ? 'active' : ''}`}
+            onClick={() => handleNavClick('events')}
           >
-            <AlertTriangle size={18} />
+            <AlertTriangle size={17} />
             <span>Protection Events</span>
           </button>
 
           <button 
-            className={`nav-item ${activeTab === 'intelligence' ? 'active' : ''}`}
-            onClick={() => setActiveTab('intelligence')}
+            className={`nav-link ${activeTab === 'intelligence' ? 'active' : ''}`}
+            onClick={() => handleNavClick('intelligence')}
           >
-            <BarChart3 size={18} />
+            <BarChart3 size={17} />
             <span>Risk Intelligence</span>
           </button>
 
           <button 
-            className={`nav-item ${activeTab === 'simulator' ? 'active' : ''}`}
-            onClick={() => setActiveTab('simulator')}
+            className={`nav-link ${activeTab === 'simulator' ? 'active' : ''}`}
+            onClick={() => handleNavClick('simulator')}
           >
-            <FlaskConical size={18} />
+            <FlaskConical size={17} />
             <span>Attack Simulator</span>
           </button>
         </nav>
 
-        <div style={{ padding: '16px', borderTop: '1px solid #1e293b', fontSize: '12px', color: '#94a3b8' }}>
-          <div style={{ fontWeight: 600, color: '#f8fafc', marginBottom: '4px' }}>Adaptive Security Active</div>
-          <div>v1.0.0 • Local Synthetic DB</div>
+        {/* RIGHT: Notifications & User Profile */}
+        <div className="nav-right-controls">
+          <button className="nav-icon-btn" title="Notifications">
+            <Bell size={19} />
+            <span className="nav-notification-dot"></span>
+          </button>
+
+          <button className="user-profile-btn">
+            <div className="avatar-circle">RA</div>
+            <div className="user-info">
+              <span className="user-name">Risk Analyst</span>
+              <span className="user-role">SecureFlow Ops</span>
+            </div>
+            <ChevronDown size={15} color="var(--text-muted)" />
+          </button>
         </div>
-      </aside>
 
-      {/* Main Layout Area */}
+        {/* Mobile Hamburger Button */}
+        <button 
+          className="mobile-menu-btn" 
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </header>
+
+      {/* Mobile Navigation Drawer */}
+      <div className={`mobile-drawer ${mobileMenuOpen ? 'open' : ''}`}>
+        <button 
+          className={`nav-link ${activeTab === 'overview' ? 'active' : ''}`}
+          onClick={() => handleNavClick('overview')}
+        >
+          <LayoutDashboard size={17} />
+          <span>Overview</span>
+        </button>
+
+        <button 
+          className={`nav-link ${activeTab === 'checkout' ? 'active' : ''}`}
+          onClick={() => handleNavClick('checkout')}
+        >
+          <CreditCard size={17} />
+          <span>Customer Checkout</span>
+        </button>
+
+        <button 
+          className={`nav-link ${activeTab === 'events' ? 'active' : ''}`}
+          onClick={() => handleNavClick('events')}
+        >
+          <AlertTriangle size={17} />
+          <span>Protection Events</span>
+        </button>
+
+        <button 
+          className={`nav-link ${activeTab === 'intelligence' ? 'active' : ''}`}
+          onClick={() => handleNavClick('intelligence')}
+        >
+          <BarChart3 size={17} />
+          <span>Risk Intelligence</span>
+        </button>
+
+        <button 
+          className={`nav-link ${activeTab === 'simulator' ? 'active' : ''}`}
+          onClick={() => handleNavClick('simulator')}
+        >
+          <FlaskConical size={17} />
+          <span>Attack Simulator</span>
+        </button>
+      </div>
+
+      {/* Main Full-Width Content Area */}
       <main className="main-content">
-        <header className="top-bar">
-          <div className="top-title-group">
-            <h1>
-              {activeTab === 'overview' && 'Payment Protection Overview'}
-              {activeTab === 'checkout' && 'Customer Payment Checkout'}
-              {activeTab === 'events' && 'Risk Operations & Audit Trail'}
-              {activeTab === 'intelligence' && 'Security Intelligence & Analytics'}
-              {activeTab === 'simulator' && 'Scenario Simulation Lab'}
-            </h1>
-            <p>Adaptive AI Security Layer for Digital Payments</p>
-          </div>
-
-          <div className="env-badge">
-            <span className="status-dot"></span>
-            Engine Active • API Port 8000
-          </div>
-        </header>
-
         <div className="content-body">
           {/* TAB 1: OVERVIEW DASHBOARD */}
           {activeTab === 'overview' && (
             <div>
               <div style={{ marginBottom: '24px' }}>
-                <h2 style={{ fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em' }}>Good afternoon</h2>
+                <h2 style={{ fontSize: '24px', fontWeight: 800, letterSpacing: '-0.03em' }}>Good afternoon</h2>
                 <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>
                   Here is what is happening across your payment protection layer.
                 </p>
@@ -212,7 +263,7 @@ export default function App() {
           {activeTab === 'intelligence' && (
             <div>
               <div style={{ marginBottom: '24px' }}>
-                <h2 style={{ fontSize: '22px', fontWeight: 700 }}>Protection vs. Friction Intelligence</h2>
+                <h2 style={{ fontSize: '24px', fontWeight: 800 }}>Protection vs. Friction Intelligence</h2>
                 <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>Empirical evaluation metrics and multi-engine breakdown.</p>
               </div>
 
