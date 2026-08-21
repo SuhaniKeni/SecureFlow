@@ -1,0 +1,234 @@
+{
+  "timestamp": "2026-08-21 14:14:04",
+  "total_unseen_scenarios": 150,
+  "action_selection_accuracy": 0.86,
+  "binary_metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": {
+      "tp": 75,
+      "tn": 75,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "subgroup_accuracies": {
+    "seen_categories": 0.72,
+    "unseen_categories": 1.0,
+    "legitimate_unusual": 1.0,
+    "unseen_utility": 1.0,
+    "unseen_challan": 1.0,
+    "unseen_insurance": 1.0
+  },
+  "errors_count": 21,
+  "error_details": [
+    {
+      "scenario_id": "UNSEEN-0111",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 2,309.36 is substantially above customer historical mean Rs 2,138.60."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0112",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 2,763.05 is substantially above customer historical mean Rs 2,815.92."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0114",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 2,746.06 (z-score: 5.44) and new recipient indicate significant baseline deviation."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0115",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 1,994.91 is substantially above customer historical mean Rs 1,448.64."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0116",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Transaction amount Rs 3,462.10 is substantially above customer historical mean Rs 2,153.16."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0117",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 3,400.36 is substantially above customer historical mean Rs 2,389.46."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0118",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 2,829.47 is substantially above customer historical mean Rs 2,554.51."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0119",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Transaction amount Rs 1,739.60 is substantially above customer historical mean Rs 755.53."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0120",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 1,742.04 is substantially above customer historical mean Rs 2,353.88."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0121",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 2,843.72 is substantially above customer historical mean Rs 2,087.45."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0124",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 3,459.64 (z-score: 6.94) and new recipient indicate significant baseline deviation."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0125",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Transaction amount Rs 3,363.65 (z-score: 3.94) and new recipient indicate significant baseline deviation."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0126",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 1,611.96 is substantially above customer historical mean Rs 1,425.45."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0127",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 1,545.20 is substantially above customer historical mean Rs 2,377.19."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0129",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 2,690.38 is substantially above customer historical mean Rs 2,149.38."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0136",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 2,727.80 (z-score: 3.28) and new recipient indicate significant baseline deviation."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0139",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 545.04 is substantially above customer historical mean Rs 2,353.88."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0141",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 596.48 is substantially above customer historical mean Rs 1,196.36."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0142",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Transaction amount Rs 3,189.30 (z-score: 3.24) and new recipient indicate significant baseline deviation."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0143",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 3,157.71 (z-score: 4.89) and new recipient indicate significant baseline deviation."
+      ]
+    },
+    {
+      "scenario_id": "UNSEEN-0144",
+      "category": "Legitimate_Routine",
+      "expected": "ALLOW",
+      "actual": "VERIFY",
+      "evidence": [
+        "Detected social engineering signals: financial pressure in payment text.",
+        "Transaction amount Rs 1,086.64 is substantially above customer historical mean Rs 2,815.92."
+      ]
+    }
+  ],
+  "generalization_assessment": "MODERATE GENERALIZATION"
+}

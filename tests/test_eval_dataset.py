@@ -23,3 +23,29 @@ def test_eval_dataset_categories_and_uniqueness():
         "G_Conflicting_Signals", "H_Ambiguous_Cases"
     }
     assert expected_categories.issubset(categories), f"Missing categories: {expected_categories - categories}"
+
+def test_eval_dataset_leakage_and_diversity_checks():
+    """Dataset quality check: verifies non-trivial distributions and zero input payload leakage."""
+    with open(EVAL_DATASET_PATH, "r", encoding="utf-8") as f:
+        scenarios = json.load(f)
+
+    # 1. Input payload metadata leakage check
+    for s in scenarios:
+        inp = s["input"]
+        assert "expected_action" not in inp, "Data Leakage: expected_action present in input payload"
+        assert "category" not in inp, "Data Leakage: category present in input payload"
+        assert "scenario_id" not in inp, "Data Leakage: scenario_id present in input payload"
+
+    # 2. Text note and URL diversity checks
+    notes = set(s["input"]["payment_note"] for s in scenarios)
+    urls = set(s["input"]["url"] for s in scenarios)
+
+    assert len(urls) >= 15, f"URL diversity check failed: Only {len(urls)} unique URLs"
+    assert len(notes) >= 300, f"Note diversity check failed: Only {len(notes)} unique notes"
+
+    # 3. Amount distribution overlap check (Legitimate vs Attack amounts must overlap)
+    legit_amts = [s["input"]["amount"] for s in scenarios if "Legitimate" in s["category"] or s["category"] == "A_Normal_Legitimate"]
+    attack_amts = [s["input"]["amount"] for s in scenarios if "Attack" in s["category"] or "Impersonation" in s["category"] or "Destination" in s["category"]]
+
+    assert min(legit_amts) < max(attack_amts), "Amount distribution error: Legitimate and Attack amounts do not overlap"
+    assert min(attack_amts) < max(legit_amts), "Amount distribution error: Attack amounts artificially separated from Legitimate"

@@ -1,0 +1,2402 @@
+[
+  {
+    "scenario_id": "UNSEEN-0001",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 5176.23,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 5176.23. Complete settlement ref #908225.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0002",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-046",
+      "amount": 4644.27,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 4644.27. Complete settlement ref #466725.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0003",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-033",
+      "amount": 7900.16,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 7900.16. Complete settlement ref #658787.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0004",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 7393.69,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 7393.69. Complete settlement ref #376212.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0005",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-043",
+      "amount": 8963.7,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 8963.7. Complete settlement ref #314418.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0006",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 3975.25,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 3975.25. Complete settlement ref #905325.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0007",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-012",
+      "amount": 2626.65,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 2626.65. Complete settlement ref #463860.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0008",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 4777.54,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 4777.54. Complete settlement ref #975423.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0009",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 9148.81,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 9148.81. Complete settlement ref #682378.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0010",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-025",
+      "amount": 2783.37,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 2783.37. Complete settlement ref #780046.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0011",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-012",
+      "amount": 1545.16,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 1545.16. Complete settlement ref #514728.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0012",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-050",
+      "amount": 8311.99,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 8311.99. Complete settlement ref #270435.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0013",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-011",
+      "amount": 8229.4,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 8229.4. Complete settlement ref #798043.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0014",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-029",
+      "amount": 7895.22,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 7895.22. Complete settlement ref #506491.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0015",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 5931.61,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 5931.61. Complete settlement ref #155005.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0016",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-046",
+      "amount": 6450.68,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 6450.68. Complete settlement ref #631746.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0017",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-045",
+      "amount": 6223.0,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 6223.0. Complete settlement ref #653836.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0018",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 8333.37,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 8333.37. Complete settlement ref #480631.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0019",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 7592.01,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 7592.01. Complete settlement ref #953350.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0020",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-020",
+      "amount": 6712.05,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 6712.05. Complete settlement ref #364799.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0021",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-046",
+      "amount": 7217.95,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 7217.95. Complete settlement ref #904213.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0022",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-038",
+      "amount": 3533.68,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 3533.68. Complete settlement ref #161047.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0023",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-011",
+      "amount": 1936.69,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 1936.69. Complete settlement ref #388516.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0024",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-046",
+      "amount": 1905.76,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 1905.76. Complete settlement ref #724283.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0025",
+    "scenario_name": "Unseen Category: Utility Interruption Scam",
+    "category": "Unseen_Category_Utility",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-020",
+      "amount": 5696.13,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Municipal Utility",
+      "payment_note": "NOTICE: Service access scheduled for interruption due to pending dues Rs 5696.13. Complete settlement ref #326975.",
+      "url": "http://city-utility-settlement.online/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0026",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-022",
+      "amount": 2322.76,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #823059 issued. Immediate online payment of Rs 2322.76 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0027",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 1271.31,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #650799 issued. Immediate online payment of Rs 1271.31 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0028",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-047",
+      "amount": 2882.67,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #146077 issued. Immediate online payment of Rs 2882.67 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0029",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-047",
+      "amount": 4245.67,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #520069 issued. Immediate online payment of Rs 4245.67 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0030",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 4426.81,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #774687 issued. Immediate online payment of Rs 4426.81 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0031",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 655.49,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #566861 issued. Immediate online payment of Rs 655.49 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0032",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 3695.02,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #891823 issued. Immediate online payment of Rs 3695.02 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0033",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-013",
+      "amount": 4236.17,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #265118 issued. Immediate online payment of Rs 4236.17 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0034",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 1059.92,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #772593 issued. Immediate online payment of Rs 1059.92 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0035",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-008",
+      "amount": 1506.4,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #820946 issued. Immediate online payment of Rs 1506.4 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0036",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 2662.12,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #597156 issued. Immediate online payment of Rs 2662.12 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0037",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-022",
+      "amount": 3281.86,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #649053 issued. Immediate online payment of Rs 3281.86 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0038",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-039",
+      "amount": 2818.95,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #363421 issued. Immediate online payment of Rs 2818.95 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0039",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 3805.76,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #968596 issued. Immediate online payment of Rs 3805.76 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0040",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-005",
+      "amount": 4221.4,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #726919 issued. Immediate online payment of Rs 4221.4 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0041",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 3895.09,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #982604 issued. Immediate online payment of Rs 3895.09 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0042",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-013",
+      "amount": 1410.6,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #149649 issued. Immediate online payment of Rs 1410.6 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0043",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 511.34,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #935138 issued. Immediate online payment of Rs 511.34 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0044",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 4246.84,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #962619 issued. Immediate online payment of Rs 4246.84 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0045",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 2110.62,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #785438 issued. Immediate online payment of Rs 2110.62 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0046",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 1691.92,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #773997 issued. Immediate online payment of Rs 1691.92 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0047",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 3784.21,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #469738 issued. Immediate online payment of Rs 3784.21 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0048",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 4063.74,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #135336 issued. Immediate online payment of Rs 4063.74 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0049",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 591.35,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #747640 issued. Immediate online payment of Rs 591.35 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0050",
+    "scenario_name": "Unseen Category: Traffic E-Challan Scam",
+    "category": "Unseen_Category_Challan",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-036",
+      "amount": 1074.6,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Traffic Police E-Challan",
+      "payment_note": "TRAFFIC VIOLATION: E-challan #830850 issued. Immediate online payment of Rs 1074.6 required to avoid court summons.",
+      "url": "http://traffic-challan-portal.tech/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0051",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 6567.03,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #837636. Pay processing administrative fee Rs 6567.03 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0052",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-033",
+      "amount": 4093.29,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #499045. Pay processing administrative fee Rs 4093.29 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0053",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-047",
+      "amount": 4460.57,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #322903. Pay processing administrative fee Rs 4460.57 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0054",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-039",
+      "amount": 7349.86,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #676296. Pay processing administrative fee Rs 7349.86 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0055",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-005",
+      "amount": 5765.56,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #763702. Pay processing administrative fee Rs 5765.56 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0056",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-028",
+      "amount": 5467.59,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #712775. Pay processing administrative fee Rs 5467.59 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0057",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-042",
+      "amount": 3395.81,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #216688. Pay processing administrative fee Rs 3395.81 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0058",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 4072.74,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #580660. Pay processing administrative fee Rs 4072.74 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0059",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-046",
+      "amount": 3765.58,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #191690. Pay processing administrative fee Rs 3765.58 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0060",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 7826.96,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #536448. Pay processing administrative fee Rs 7826.96 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0061",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 2326.48,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #211381. Pay processing administrative fee Rs 2326.48 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0062",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 5764.8,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #200107. Pay processing administrative fee Rs 5764.8 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0063",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-009",
+      "amount": 8239.34,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #681605. Pay processing administrative fee Rs 8239.34 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0064",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-011",
+      "amount": 8052.33,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #475523. Pay processing administrative fee Rs 8052.33 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0065",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-046",
+      "amount": 7685.33,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #209195. Pay processing administrative fee Rs 7685.33 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0066",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-021",
+      "amount": 2046.83,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #922109. Pay processing administrative fee Rs 2046.83 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0067",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 2856.1,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #906206. Pay processing administrative fee Rs 2856.1 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0068",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 1455.7,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #114885. Pay processing administrative fee Rs 1455.7 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0069",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-033",
+      "amount": 2024.85,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #193247. Pay processing administrative fee Rs 2024.85 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0070",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 5805.91,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #154642. Pay processing administrative fee Rs 5805.91 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0071",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-023",
+      "amount": 4927.55,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #313425. Pay processing administrative fee Rs 4927.55 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0072",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 8173.59,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #803818. Pay processing administrative fee Rs 8173.59 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0073",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 5615.86,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #649517. Pay processing administrative fee Rs 5615.86 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0074",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-045",
+      "amount": 2541.72,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #706434. Pay processing administrative fee Rs 2541.72 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0075",
+    "scenario_name": "Unseen Category: Insurance Bonus Scam",
+    "category": "Unseen_Category_Insurance",
+    "is_seen_category": false,
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 8401.57,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "Life Insurance Care",
+      "payment_note": "INSURANCE UPDATE: Policy maturity bonus approved ref #111476. Pay processing administrative fee Rs 8401.57 to credit.",
+      "url": "http://insurance-policy-dividend.live/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0076",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 43356.01,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #436578",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0077",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 40002.82,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #421287",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0078",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-045",
+      "amount": 46881.0,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #750772",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0079",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-021",
+      "amount": 29413.41,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #459929",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0080",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-013",
+      "amount": 60643.22,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #185877",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0081",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-021",
+      "amount": 55192.06,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #429727",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0082",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 58326.61,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #565209",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0083",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-014",
+      "amount": 70438.25,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #270158",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0084",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 54979.15,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #788575",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0085",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 47075.44,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #467504",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0086",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 49858.69,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #545950",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0087",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 34719.83,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #289135",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0088",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 37670.37,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #408203",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0089",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 37990.85,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #128860",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0090",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 67828.93,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #284589",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0091",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-043",
+      "amount": 45798.64,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #854885",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0092",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-008",
+      "amount": 33475.46,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #746382",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0093",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 35693.5,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #793589",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0094",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 72442.28,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #589032",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0095",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 38237.62,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #725603",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0096",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-005",
+      "amount": 42776.22,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #787899",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0097",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-050",
+      "amount": 54076.85,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #703271",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0098",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 44883.22,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #440309",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0099",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-009",
+      "amount": 61896.78,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #456412",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0100",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-050",
+      "amount": 44985.98,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #528467",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0101",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-049",
+      "amount": 49954.88,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #202356",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0102",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-012",
+      "amount": 28851.15,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #184670",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0103",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 64654.72,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #393480",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0104",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 72144.0,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #451252",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0105",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-045",
+      "amount": 27272.08,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #386391",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0106",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-023",
+      "amount": 59472.92,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #846923",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0107",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-033",
+      "amount": 39393.32,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #741409",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0108",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 40445.11,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for office equipment purchase ref #344759",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0109",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-028",
+      "amount": 26979.03,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #382522",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0110",
+    "scenario_name": "Legitimate High-Value Purchase",
+    "category": "Legitimate_Unusual",
+    "is_seen_category": true,
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 60944.08,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Annual vehicle insurance renewal premium ref #829824",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0111",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 2309.36,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #602415",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0112",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 2763.05,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #679814",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0113",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 2490.2,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine monthly utility bill settlement ref #426347",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0114",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 2746.06,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #743342",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0115",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-014",
+      "amount": 1994.91,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #455301",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0116",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 3462.1,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine monthly utility bill settlement ref #630908",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0117",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-022",
+      "amount": 3400.36,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #286110",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0118",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 2829.47,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #884136",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0119",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 1739.6,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #101652",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0120",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 1742.04,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #852832",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0121",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-013",
+      "amount": 2843.72,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #612965",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0122",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-034",
+      "amount": 3009.28,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #231664",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0123",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-014",
+      "amount": 2931.72,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #400413",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0124",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 3459.64,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #216135",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0125",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 3363.65,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine monthly utility bill settlement ref #249952",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0126",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-012",
+      "amount": 1611.96,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #411212",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0127",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-025",
+      "amount": 1545.2,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #845667",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0128",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-008",
+      "amount": 2086.09,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine monthly utility bill settlement ref #915399",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0129",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-033",
+      "amount": 2690.38,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #121408",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0130",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-025",
+      "amount": 1522.92,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine monthly utility bill settlement ref #121288",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0131",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 2444.29,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #380147",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0132",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 820.89,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #745583",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0133",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-049",
+      "amount": 2070.37,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #798728",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0134",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-027",
+      "amount": 1190.88,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine monthly utility bill settlement ref #542674",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0135",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 1230.71,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine monthly utility bill settlement ref #669325",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0136",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 2727.8,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #843958",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0137",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 1617.79,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine monthly utility bill settlement ref #559550",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0138",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 2294.51,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #723363",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0139",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 545.04,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #228761",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0140",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-014",
+      "amount": 2417.76,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine monthly utility bill settlement ref #383153",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0141",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-046",
+      "amount": 596.48,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #948955",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0142",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-023",
+      "amount": 3189.3,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #959969",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0143",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 3157.71,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #952351",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0144",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 1086.64,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Online course subscription fee ref #409581",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0145",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 1309.09,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #436323",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0146",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-007",
+      "amount": 801.64,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #425657",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0147",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 1046.5,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #353633",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0148",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 1806.52,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #248544",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0149",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-043",
+      "amount": 851.55,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine monthly utility bill settlement ref #763801",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "UNSEEN-0150",
+    "scenario_name": "Legitimate Routine Settlement",
+    "category": "Legitimate_Routine",
+    "is_seen_category": true,
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 2589.66,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local merchant payment for renovation supplies #397857",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  }
+]

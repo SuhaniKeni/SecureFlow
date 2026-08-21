@@ -1,0 +1,123 @@
+{
+  "timestamp": "2026-08-21 14:13:59",
+  "benchmark_400_results": {
+    "baseline": {
+      "system": "Baseline",
+      "total_scenarios": 400,
+      "action_accuracy": 0.7925,
+      "binary_metrics": {
+        "precision": 0.8235,
+        "recall": 0.98,
+        "f1_score": 0.895,
+        "tp": 196,
+        "tn": 158,
+        "fp": 42,
+        "fn": 4,
+        "scam_protection_rate": 0.98,
+        "unnecessary_blocking_rate": 0.21
+      },
+      "friction_metrics": {
+        "legitimate_total": 200,
+        "legitimate_preservation_rate": 0.79,
+        "unnecessary_verification_rate": 0.25,
+        "unnecessary_holding_rate": 0.0,
+        "unnecessary_blocking_rate": 0.21
+      },
+      "latency_ms": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "p99": 0.01
+      }
+    },
+    "secureflow": {
+      "system": "SecureFlow",
+      "total_scenarios": 400,
+      "action_accuracy": 0.835,
+      "binary_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "tp": 200,
+        "tn": 200,
+        "fp": 0,
+        "fn": 0,
+        "scam_protection_rate": 1.0,
+        "unnecessary_blocking_rate": 0.0
+      },
+      "friction_metrics": {
+        "legitimate_total": 200,
+        "legitimate_preservation_rate": 1.0,
+        "unnecessary_verification_rate": 0.75,
+        "unnecessary_holding_rate": 0.0,
+        "unnecessary_blocking_rate": 0.0
+      },
+      "latency_ms": {
+        "mean": 55.73,
+        "median": 34.18,
+        "p95": 152.43,
+        "p99": 421.17
+      }
+    }
+  },
+  "unseen_150_results": {
+    "baseline": {
+      "system": "Baseline",
+      "total_scenarios": 150,
+      "action_accuracy": 0.8533,
+      "binary_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "tp": 75,
+        "tn": 75,
+        "fp": 0,
+        "fn": 0,
+        "scam_protection_rate": 1.0,
+        "unnecessary_blocking_rate": 0.0
+      },
+      "friction_metrics": {
+        "legitimate_total": 75,
+        "legitimate_preservation_rate": 1.0,
+        "unnecessary_verification_rate": 0.1733,
+        "unnecessary_holding_rate": 0.0,
+        "unnecessary_blocking_rate": 0.0
+      },
+      "latency_ms": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.01,
+        "p99": 0.01
+      }
+    },
+    "secureflow": {
+      "system": "SecureFlow",
+      "total_scenarios": 150,
+      "action_accuracy": 0.86,
+      "binary_metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "tp": 75,
+        "tn": 75,
+        "fp": 0,
+        "fn": 0,
+        "scam_protection_rate": 1.0,
+        "unnecessary_blocking_rate": 0.0
+      },
+      "friction_metrics": {
+        "legitimate_total": 75,
+        "legitimate_preservation_rate": 1.0,
+        "unnecessary_verification_rate": 0.7467,
+        "unnecessary_holding_rate": 0.0,
+        "unnecessary_blocking_rate": 0.0
+      },
+      "latency_ms": {
+        "mean": 26.27,
+        "median": 20.32,
+        "p95": 44.39,
+        "p99": 123.81
+      }
+    }
+  }
+}

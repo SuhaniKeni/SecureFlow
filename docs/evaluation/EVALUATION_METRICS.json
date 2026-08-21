@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-21T08:09:44.789018+00:00",
+  "timestamp": "2026-08-21T08:44:00.637347+00:00",
   "total_scenarios_evaluated": 10,
   "baseline_model": {
     "precision": 0.8,
@@ -25,7 +25,7 @@
     "unnecessary_verification_rate": 0.0,
     "unnecessary_blocking_rate": 0.0,
     "action_selection_accuracy": 1.0,
-    "mean_latency_ms": 8.75
+    "mean_latency_ms": 6.43
   },
   "delta_improvements": {
     "f1_improvement": 0.3333,

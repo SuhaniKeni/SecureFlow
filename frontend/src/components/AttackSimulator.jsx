@@ -1,313 +1,135 @@
 import React, { useState } from 'react';
-import { 
-  Play, ShieldAlert, ShieldCheck, Clock, CheckCircle, XCircle, 
-  ArrowRight, Terminal, RefreshCw, Cpu, Layers, HelpCircle
-} from 'lucide-react';
+import { Play, FlaskConical, CheckCircle, AlertTriangle, XCircle, ArrowRight, RefreshCw } from 'lucide-react';
 
 const BENCHMARK_SCENARIOS = [
-  {
-    id: "SCN-001",
-    name: "1. Legitimate Recurring Electricity Payment",
-    category: "Legitimate Normal",
-    expected_action: "ALLOW",
-    input: {
-      customer_id: "CUST-001",
-      amount: 1450.00,
-      recipient_id: "RCP-001",
-      claimed_merchant: "BESCOM Electricity",
-      payment_note: "Monthly electricity bill payment ref #400192839",
-      url: "https://bescom.co.in/pay"
-    }
-  },
-  {
-    id: "SCN-002",
-    name: "2. Fake Electricity Disconnection Payment Scam",
-    category: "Social Engineering Attack",
-    expected_action: "BLOCK",
-    input: {
-      customer_id: "CUST-001",
-      amount: 8742.00,
-      recipient_id: "RCP-004",
-      claimed_merchant: "BESCOM Electricity Board",
-      payment_note: "URGENT: Electricity power line will be disconnected tonight at 9.30pm. Pay overdue bill Rs 8742 immediately",
-      url: "http://elect-pay-bill.top/pay"
-    }
-  },
-  {
-    id: "SCN-003",
-    name: "3. Fake Bank Security Alert / KYC Phishing",
-    category: "Phishing Attack",
-    expected_action: "BLOCK",
-    input: {
-      customer_id: "CUST-002",
-      amount: 15000.00,
-      recipient_id: "RCP-005",
-      claimed_merchant: "State Bank of India",
-      payment_note: "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately or legal action will be taken.",
-      url: "http://bank-kyc-update.online/login"
-    }
-  },
-  {
-    id: "SCN-004",
-    name: "4. Fake Courier Duty / Customs Payment",
-    category: "Impersonation Attack",
-    expected_action: "HOLD",
-    input: {
-      customer_id: "CUST-003",
-      amount: 1499.00,
-      recipient_id: "RCP-006",
-      claimed_merchant: "India Post Express",
-      payment_note: "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 1499. Pay immediately to release.",
-      url: "http://customs-clearance-pay.com/duty"
-    }
-  },
-  {
-    id: "SCN-005",
-    name: "5. Fake Customer-Support Refund Fee Scam",
-    category: "Refund Bait Attack",
-    expected_action: "HOLD",
-    input: {
-      customer_id: "CUST-004",
-      amount: 199.00,
-      recipient_id: "RCP-005",
-      claimed_merchant: "Customer Care Refund Portal",
-      payment_note: "Dear User, customer support refund of Rs 4999 is approved. Pay processing fee of Rs 199 at refund portal.",
-      url: "http://refund-support-portal.site/fee"
-    }
-  },
-  {
-    id: "SCN-006",
-    name: "6. Fake Government Income Tax Refund Fee",
-    category: "Government Impersonation",
-    expected_action: "BLOCK",
-    input: {
-      customer_id: "CUST-005",
-      amount: 850.00,
-      recipient_id: "RCP-005",
-      claimed_merchant: "Income Tax Refund Cell",
-      payment_note: "URGENT: Income tax refund Rs 14,200 pending. Pay service tax Rs 850 immediately or account blocked.",
-      url: "http://incometax-refund-gov.in.net/claim"
-    }
-  },
-  {
-    id: "SCN-007",
-    name: "7. Legitimate High-Value Laptop Purchase",
-    category: "Legitimate Unusual",
-    expected_action: "VERIFY",
-    input: {
-      customer_id: "CUST-001",
-      amount: 85000.00,
-      recipient_id: "RCP-002",
-      claimed_merchant: "Amazon India",
-      payment_note: "Payment for Apple Laptop order #940182 via Amazon Pay",
-      url: "https://amazon.in/checkout/pay"
-    }
-  },
-  {
-    id: "SCN-008",
-    name: "8. New Legitimate Local Merchant",
-    category: "Legitimate New Merchant",
-    expected_action: "VERIFY",
-    input: {
-      customer_id: "CUST-002",
-      amount: 3200.00,
-      recipient_id: "RCP-003",
-      claimed_merchant: "Local Hardware Store",
-      payment_note: "Purchase of construction tools",
-      url: "https://sbi.co.in/portal/pay"
-    }
-  },
-  {
-    id: "SCN-009",
-    name: "9. Suspicious Recipient with Legitimate-Looking Request",
-    category: "Disguised Fraud",
-    expected_action: "HOLD",
-    input: {
-      customer_id: "CUST-003",
-      amount: 4500.00,
-      recipient_id: "RCP-004",
-      claimed_merchant: "City Power Supply",
-      payment_note: "Payment for monthly electricity charges",
-      url: "http://elect-pay-bill.top/pay"
-    }
-  },
-  {
-    id: "SCN-010",
-    name: "10. Merchant Identity Mismatch Scam",
-    category: "Identity Impersonation",
-    expected_action: "BLOCK",
-    input: {
-      customer_id: "CUST-001",
-      amount: 12450.00,
-      recipient_id: "RCP-004",
-      claimed_merchant: "BESCOM Power Supply",
-      payment_note: "Urgent: BESCOM electric bill due. Avoid penalty of Rs 5000. Pay now.",
-      url: "http://bill-pay-fast.online/electricity"
-    }
-  }
+  { scenario_id: "SCN-001", name: "Legitimate Recurring Electricity Payment", expected_action: "ALLOW" },
+  { scenario_id: "SCN-002", name: "Fake Electricity Disconnection Scam", expected_action: "BLOCK" },
+  { scenario_id: "SCN-003", name: "Fake Bank KYC Phishing Alert", expected_action: "BLOCK" },
+  { scenario_id: "SCN-004", name: "Fake Courier Customs Duty Scam", expected_action: "BLOCK" },
+  { scenario_id: "SCN-005", name: "Fake Customer-Support Refund Scam", expected_action: "BLOCK" },
+  { scenario_id: "SCN-006", name: "Fake Government Tax Refund", expected_action: "BLOCK" },
+  { scenario_id: "SCN-007", name: "Legitimate Large Laptop Purchase", expected_action: "VERIFY" },
+  { scenario_id: "SCN-008", name: "New Legitimate Merchant Payment", expected_action: "VERIFY" },
+  { scenario_id: "SCN-009", name: "Suspicious Recipient Destination", expected_action: "BLOCK" },
+  { scenario_id: "SCN-010", name: "Merchant Identity Mismatch", expected_action: "BLOCK" }
 ];
 
 export default function AttackSimulator() {
-  const [runningId, setRunningId] = useState(null);
-  const [scenarioResults, setScenarioResults] = useState({});
-  const [isBatchRunning, setIsBatchRunning] = useState(false);
+  const [running, setRunning] = useState(false);
+  const [results, setResults] = useState({});
 
-  const runSingleScenario = async (scenario) => {
-    setRunningId(scenario.id);
+  const runSingleScenario = async (scId) => {
     try {
-      const response = await fetch('/api/scenarios/run', {
+      const res = await fetch('/api/scenarios/run', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ scenario_id: scenario.id })
+        body: JSON.stringify({ scenario_id: scId })
       });
-      if (response.ok) {
-        const data = await response.json();
-        setScenarioResults(prev => ({ ...prev, [scenario.id]: data }));
-      }
+      const data = await res.json();
+      setResults((prev) => ({ ...prev, [scId]: data }));
     } catch (err) {
-      console.error("Scenario execution error:", err);
-    } finally {
-      setRunningId(null);
+      console.error(err);
     }
   };
 
   const runAllScenarios = async () => {
-    setIsBatchRunning(true);
+    setRunning(true);
     for (const sc of BENCHMARK_SCENARIOS) {
-      await runSingleScenario(sc);
+      await runSingleScenario(sc.scenario_id);
     }
-    setIsBatchRunning(false);
-  };
-
-  const getBadgeClass = (act) => {
-    switch (act) {
-      case 'BLOCK': return 'badge-block';
-      case 'HOLD': return 'badge-hold';
-      case 'VERIFY': return 'badge-verify';
-      default: return 'badge-allow';
-    }
+    setRunning(false);
   };
 
   return (
-    <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-      {/* Header Banner */}
-      <div className="glass-panel" style={{ padding: '1.5rem', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+    <div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
         <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent-cyan)', marginBottom: '0.25rem' }}>
-            <Cpu size={20} />
-            <span style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-              Benchmark Security Test Suite
-            </span>
-          </div>
-          <h2 style={{ fontSize: '1.35rem', fontWeight: 800 }}>SecureFlow Attack Scenario Simulator</h2>
-          <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
-            Evaluates the adaptive security layer against 10 controlled social-engineering and legitimate edge-case scenarios.
-          </p>
+          <h2 style={{ fontSize: '22px', fontWeight: 700 }}>SecureFlow Scenario Simulation Lab</h2>
+          <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>Benchmark attack vectors and edge cases against the active security pipeline.</p>
         </div>
 
-        <button
-          onClick={runAllScenarios}
-          disabled={isBatchRunning}
-          className="btn-primary"
-          style={{ padding: '0.75rem 1.25rem' }}
+        <button 
+          className="btn btn-primary" 
+          onClick={runAllScenarios} 
+          disabled={running}
+          style={{ padding: '12px 20px', fontSize: '14px' }}
         >
-          {isBatchRunning ? <RefreshCw size={18} className="animate-spin" /> : <Play size={18} />}
-          Run All 10 Scenarios
+          {running ? <RefreshCw size={16} className="spin" /> : <Play size={16} />}
+          {running ? 'Executing All Scenarios...' : 'Run All 10 Scenarios'}
         </button>
       </div>
 
-      {/* Scenario Cards Grid */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+      {/* Scenario Grid */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
         {BENCHMARK_SCENARIOS.map((sc) => {
-          const res = scenarioResults[sc.id];
-          const isRunning = runningId === sc.id;
-          const isMatched = res ? (res.action === sc.expected_action) : null;
+          const res = results[sc.scenario_id];
+          const isMatch = res && res.protection_action === sc.expected_action;
 
           return (
-            <div key={sc.id} className="glass-panel" style={{ padding: '1.5rem', borderRadius: '16px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', pb: '0.75rem', borderBottom: '1px solid var(--border-card)' }}>
-                <div>
-                  <span style={{ fontSize: '0.75rem', color: 'var(--accent-cyan)', fontWeight: 600 }}>{sc.category}</span>
-                  <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: '#fff' }}>{sc.name}</h3>
+            <div key={sc.scenario_id} className="card" style={{ padding: '20px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: res ? '16px' : '0' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <div style={{ fontWeight: 700, fontFamily: 'monospace', color: 'var(--primary-blue)', backgroundColor: 'var(--primary-blue-light)', padding: '4px 8px', borderRadius: 'var(--radius-sm)', fontSize: '12px' }}>
+                    {sc.scenario_id}
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '16px', fontWeight: 700 }}>{sc.name}</h3>
+                    <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Target Action: <strong style={{ color: 'var(--text-main)' }}>{sc.expected_action}</strong></div>
+                  </div>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <button
-                    onClick={() => runSingleScenario(sc)}
-                    disabled={isRunning}
-                    className="btn-secondary"
-                    style={{ fontSize: '0.8rem', padding: '0.4rem 0.85rem' }}
-                  >
-                    {isRunning ? <RefreshCw size={14} className="animate-spin" /> : <Play size={14} style={{ marginRight: '4px' }} />}
-                    Run Scenario
-                  </button>
-
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   {res && (
-                    <span className={`badge ${isMatched ? 'badge-allow' : 'badge-block'}`} style={{ fontSize: '0.8rem' }}>
-                      {isMatched ? <CheckCircle size={14} style={{ marginRight: '4px' }} /> : <XCircle size={14} style={{ marginRight: '4px' }} />}
-                      {isMatched ? 'MATCH (PASS)' : 'MISMATCH'}
+                    <span className={`badge badge-${res.protection_action.toLowerCase()}`}>
+                      Actual: {res.protection_action}
                     </span>
                   )}
+
+                  <button 
+                    className="btn btn-secondary" 
+                    onClick={() => runSingleScenario(sc.scenario_id)}
+                    style={{ padding: '8px 14px', fontSize: '13px' }}
+                  >
+                    Run Scenario
+                  </button>
                 </div>
               </div>
 
-              {/* 4 Pipeline Flow Grid: INPUT → DETECTED EVIDENCE → PROTECTION ACTION → EXPLANATION & EXPECTED OUTCOME */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1rem', fontSize: '0.8rem' }}>
-                
-                {/* 1. INPUT */}
-                <div style={{ background: 'rgba(0,0,0,0.3)', padding: '0.85rem', borderRadius: '10px' }}>
-                  <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: 700, textTransform: 'uppercase' }}>1. INPUT</span>
-                  <p style={{ marginTop: '0.35rem', fontWeight: 600, color: '#fff' }}>₹{sc.input.amount.toLocaleString('en-IN')}</p>
-                  <p style={{ color: 'var(--accent-cyan)', marginTop: '0.15rem' }}>{sc.input.claimed_merchant}</p>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.75rem', marginTop: '0.35rem', fontStyle: 'italic' }}>
-                    "{sc.input.payment_note}"
-                  </p>
-                </div>
+              {/* Execution Result Render */}
+              {res && (
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '16px', marginTop: '12px', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '16px', backgroundColor: '#f8fafc', padding: '16px', borderRadius: 'var(--radius-sm)' }}>
+                  <div>
+                    <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '6px' }}>Input Context</div>
+                    <div style={{ fontSize: '13px', fontWeight: 600 }}>₹{res.input?.amount?.toLocaleString('en-IN')} to {res.input?.claimed_merchant}</div>
+                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>{res.input?.payment_note}</div>
+                  </div>
 
-                {/* 2. DETECTED EVIDENCE */}
-                <div style={{ background: 'rgba(0,0,0,0.3)', padding: '0.85rem', borderRadius: '10px' }}>
-                  <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: 700, textTransform: 'uppercase' }}>2. DETECTED EVIDENCE</span>
-                  {res ? (
-                    <div style={{ marginTop: '0.35rem', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                      {res.evidence_bundle?.evidence_items?.length > 0 ? (
-                        res.evidence_bundle.evidence_items.map((item, idx) => (
-                          <p key={idx} style={{ color: '#fbbf24', fontSize: '0.75rem' }}>• {item.signal_type}</p>
-                        ))
+                  <div>
+                    <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '6px' }}>Detected Evidence</div>
+                    <div style={{ fontSize: '12px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                      {res.detected_evidence?.map((item, idx) => (
+                        <div key={idx} style={{ color: 'var(--primary-blue-hover)' }}>• {item.description}</div>
+                      )) || <div>Clean payment baseline.</div>}
+                    </div>
+                  </div>
+
+                  <div>
+                    <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '6px' }}>Benchmark Outcome</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      {isMatch ? (
+                        <span style={{ color: 'var(--color-allow)', fontWeight: 700, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                          <CheckCircle size={16} /> 100% Action Match
+                        </span>
                       ) : (
-                        <p style={{ color: '#34d399', fontSize: '0.75rem' }}>• Clean normal baseline</p>
+                        <span style={{ color: 'var(--color-block)', fontWeight: 700, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                          <AlertTriangle size={16} /> Action Mismatch
+                        </span>
                       )}
                     </div>
-                  ) : (
-                    <p style={{ color: 'var(--text-muted)', marginTop: '0.35rem', fontStyle: 'italic' }}>Click "Run Scenario"</p>
-                  )}
+                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>{res.explanation?.customer?.message}</div>
+                  </div>
                 </div>
-
-                {/* 3. PROTECTION ACTION */}
-                <div style={{ background: 'rgba(0,0,0,0.3)', padding: '0.85rem', borderRadius: '10px' }}>
-                  <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: 700, textTransform: 'uppercase' }}>3. PROTECTION ACTION</span>
-                  {res ? (
-                    <div style={{ marginTop: '0.5rem' }}>
-                      <span className={`badge ${getBadgeClass(res.action)}`} style={{ fontSize: '0.85rem' }}>
-                        {res.action}
-                      </span>
-                    </div>
-                  ) : (
-                    <p style={{ color: 'var(--text-muted)', marginTop: '0.35rem', fontStyle: 'italic' }}>Pending execution</p>
-                  )}
-                </div>
-
-                {/* 4. EXPLANATION & EXPECTED OUTCOME */}
-                <div style={{ background: 'rgba(0,0,0,0.3)', padding: '0.85rem', borderRadius: '10px' }}>
-                  <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: 700, textTransform: 'uppercase' }}>4. EXPECTED OUTCOME</span>
-                  <p style={{ marginTop: '0.35rem', color: '#fff', fontWeight: 600 }}>Expected: {sc.expected_action}</p>
-                  {res && (
-                    <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
-                      {res.customer_explanation?.what_happened}
-                    </p>
-                  )}
-                </div>
-
-              </div>
+              )}
             </div>
           );
         })}

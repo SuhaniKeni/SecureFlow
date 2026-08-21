@@ -71,7 +71,7 @@ def analyze_payment(
     )
 
     # 5. Persist Transaction & Protection Event Audit Trail
-    t_id = f"TXN-LIVE-{uuid.uuid4().hex[:6].upper()}"
+    t_id = f"TXN-LIVE-{uuid.uuid4().hex[:10].upper()}"
     new_txn = Transaction(
         transaction_id=t_id,
         customer_id=payload.customer_id,
@@ -85,7 +85,7 @@ def analyze_payment(
     db.add(new_txn)
 
     new_req = PaymentRequest(
-        request_id=f"REQ-{uuid.uuid4().hex[:6].upper()}",
+        request_id=f"REQ-{uuid.uuid4().hex[:10].upper()}",
         transaction_id=t_id,
         message=payload.payment_note or "Payment request",
         claimed_merchant=payload.claimed_merchant or "Payee",
@@ -95,7 +95,7 @@ def analyze_payment(
     db.add(new_req)
 
     new_evt = ProtectionEvent(
-        event_id=f"EVT-{uuid.uuid4().hex[:6].upper()}",
+        event_id=f"EVT-{uuid.uuid4().hex[:10].upper()}",
         transaction_id=t_id,
         action=decision["action"],
         evidence=bundle,

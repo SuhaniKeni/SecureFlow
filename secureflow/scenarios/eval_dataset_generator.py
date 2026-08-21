@@ -8,47 +8,75 @@ EVAL_DATASET_PATH = os.path.join(
     "data", "processed", "expanded_eval_scenarios.json"
 )
 
-# Lists for realistic procedural generation
-LEGIT_MERCHANTS = [
-    ("BESCOM Electricity", "RCP-001", "https://bescom.co.in/pay"),
-    ("Amazon India", "RCP-002", "https://amazon.in/checkout/pay"),
-    ("State Bank of India", "RCP-003", "https://sbi.co.in/portal/pay"),
-    ("Swiggy Food Delivery", "RCP-001", "https://swiggy.com/checkout"),
-    ("India Post Express", "RCP-003", "https://indiapost.gov.in/pay")
+# Diverse Legitimate Domains & Subdomains
+LEGIT_DOMAINS = [
+    "https://bescom.co.in/pay",
+    "https://pay.bescom.co.in/quickpay",
+    "https://amazon.in/checkout/pay",
+    "https://checkout.amazon.in/order",
+    "https://sbi.co.in/portal/pay",
+    "https://retail.onlinesbi.sbi/pay",
+    "https://swiggy.com/checkout",
+    "https://indiapost.gov.in/pay",
+    "https://customs.indiapost.gov.in/duty"
 ]
 
+# Diverse Phishing & Suspicious Domains (Preventing 10-domain shortcut)
 SUSPICIOUS_DOMAINS = [
     "http://elect-pay-bill.top/pay",
+    "http://bescom-disconnection-notice.site/pay",
+    "http://electricity-bill-clearance.online/bill",
     "http://bank-kyc-update.online/login",
+    "http://sbi-account-verify.info/login",
+    "http://statebank-kyc-portal.xyz/update",
     "http://customs-clearance-pay.com/duty",
+    "http://indiapost-duty-refund.club/pay",
     "http://refund-support-portal.site/fee",
+    "http://customercare-refund-pay.live/claim",
     "http://incometax-refund-gov.in.net/claim",
+    "http://tax-refund-approval.info/pay",
     "http://bill-pay-fast.online/electricity",
-    "http://verify-account-now.info/sbi"
+    "http://urgent-pay-bill.site/utility",
+    "http://fast-checkout-pay.top/merchant",
+    "http://quick-verify-payment.online/sbi"
 ]
 
-SCAM_NOTES = [
+# Diverse Scam Messages
+SCAM_NOTE_TEMPLATES = [
     "URGENT: Electricity power line will be disconnected tonight at 9.30pm. Pay overdue bill Rs {amt} immediately",
     "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
     "COURIER ALERT: International parcel held at customs due to unpaid duty Rs {amt}. Pay immediately to release.",
     "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs {amt} at refund portal.",
     "URGENT: Income tax refund pending. Pay service tax Rs {amt} immediately or account blocked.",
-    "Urgent: Electric bill due. Avoid penalty of Rs 5000. Pay now at link."
+    "Urgent: Electric bill due ref #{ref}. Avoid penalty of Rs 5000. Pay now at link.",
+    "FINAL WARNING: Outstanding power bill Rs {amt}. Disconnection scheduled within 2 hours. Pay immediately.",
+    "BANK NOTICE: Unusual activity detected. Verify identity ref #{ref} immediately or debit card blocked.",
+    "PARCEL DELAY: Unpaid customs duty fee Rs {amt} for shipment #{ref}. Release package online."
 ]
 
-LEGIT_NOTES = [
+# Diverse Legitimate Notes
+LEGIT_NOTE_TEMPLATES = [
     "Monthly electricity bill payment ref #{ref}",
     "Payment for shopping order #{ref} via UPI",
-    "Quarterly fee payment ref #{ref}",
-    "Local hardware purchase tools",
-    "Routine grocery order payment",
-    "Payment for laptop order #{ref}"
+    "Quarterly maintenance fee payment ref #{ref}",
+    "Local hardware purchase tools and materials",
+    "Routine grocery order payment #{ref}",
+    "Payment for laptop order #{ref}",
+    "Monthly broadband bill payment ref #{ref}",
+    "Mobile recharge plan renewal ref #{ref}",
+    "Dining order checkout payment ref #{ref}"
 ]
 
 CUSTOMERS = [f"CUST-{i:03d}" for i in range(1, 51)]
+RECIPIENTS = ["RCP-001", "RCP-002", "RCP-003", "RCP-004", "RCP-005", "RCP-006"]
+MERCHANTS = [
+    "BESCOM Electricity", "Amazon India", "State Bank of India",
+    "Swiggy Food Delivery", "India Post Express", "Local Hardware Store",
+    "City Power Supply", "Customer Service Portal"
+]
 
 def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400) -> List[Dict[str, Any]]:
-    """Generates a reproducible evaluation dataset of synthetic test scenarios across 8 categories."""
+    """Generates a non-leaking, realistic 400-scenario evaluation dataset across 8 categories."""
     random.seed(seed)
     scenarios = []
     sc_id = 0
@@ -56,9 +84,11 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
     # A. Normal Legitimate Payments (80 scenarios)
     for _ in range(80):
         sc_id += 1
-        m_name, r_id, url = random.choice(LEGIT_MERCHANTS[:3])
+        m_name = random.choice(MERCHANTS[:5])
+        r_id = random.choice(["RCP-001", "RCP-002", "RCP-003"])
+        url = random.choice(LEGIT_DOMAINS)
         c_id = random.choice(CUSTOMERS)
-        amt = round(random.uniform(200.0, 2500.0), 2)
+        amt = round(random.uniform(150.0, 4500.0), 2)
         ref = random.randint(10000, 99999)
         scenarios.append({
             "scenario_id": f"EVAL-{sc_id:04d}",
@@ -70,7 +100,7 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
                 "amount": amt,
                 "recipient_id": r_id,
                 "claimed_merchant": m_name,
-                "payment_note": random.choice(LEGIT_NOTES).format(ref=ref),
+                "payment_note": random.choice(LEGIT_NOTE_TEMPLATES).format(ref=ref),
                 "url": url,
                 "channel": random.choice(["UPI", "CARD", "NETBANKING"])
             }
@@ -79,9 +109,11 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
     # B. Legitimate But Unusual Payments (50 scenarios)
     for _ in range(50):
         sc_id += 1
-        m_name, r_id, url = random.choice(LEGIT_MERCHANTS[:3])
+        m_name = random.choice(MERCHANTS[:5])
+        r_id = random.choice(["RCP-001", "RCP-002", "RCP-003"])
+        url = random.choice(LEGIT_DOMAINS)
         c_id = random.choice(CUSTOMERS)
-        amt = round(random.uniform(45000.0, 95000.0), 2) # High value
+        amt = round(random.uniform(12000.0, 85000.0), 2) # Overlapping high value
         ref = random.randint(10000, 99999)
         scenarios.append({
             "scenario_id": f"EVAL-{sc_id:04d}",
@@ -103,9 +135,10 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
     for _ in range(60):
         sc_id += 1
         c_id = random.choice(CUSTOMERS)
-        amt = round(random.uniform(1500.0, 12000.0), 2)
+        amt = round(random.uniform(1200.0, 15000.0), 2) # Overlapping amount
         url = random.choice(SUSPICIOUS_DOMAINS)
-        note_tpl = random.choice(SCAM_NOTES)
+        ref = random.randint(10000, 99999)
+        note_tpl = random.choice(SCAM_NOTE_TEMPLATES)
         scenarios.append({
             "scenario_id": f"EVAL-{sc_id:04d}",
             "scenario_name": "Social Engineering Disconnection Scam",
@@ -114,9 +147,9 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
             "input": {
                 "customer_id": c_id,
                 "amount": amt,
-                "recipient_id": "RCP-004", # Mismatched recipient
+                "recipient_id": random.choice(["RCP-004", "RCP-005"]),
                 "claimed_merchant": "BESCOM Electricity Board",
-                "payment_note": note_tpl.format(amt=amt),
+                "payment_note": note_tpl.format(amt=amt, ref=ref),
                 "url": url,
                 "channel": "UPI"
             }
@@ -126,7 +159,8 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
     for _ in range(50):
         sc_id += 1
         c_id = random.choice(CUSTOMERS)
-        amt = round(random.uniform(3000.0, 25000.0), 2)
+        amt = round(random.uniform(2500.0, 35000.0), 2)
+        ref = random.randint(10000, 99999)
         scenarios.append({
             "scenario_id": f"EVAL-{sc_id:04d}",
             "scenario_name": "Merchant Identity Impersonation",
@@ -135,10 +169,10 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
             "input": {
                 "customer_id": c_id,
                 "amount": amt,
-                "recipient_id": "RCP-005", # Personal account claiming corporate bank
+                "recipient_id": "RCP-005", # Personal payee claiming corporate bank
                 "claimed_merchant": "State Bank of India",
-                "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
-                "url": "http://bank-kyc-update.online/login",
+                "payment_note": f"DEAR CUSTOMER, SBI account #{ref} suspended. Pay fee immediately to unlock.",
+                "url": random.choice([u for u in SUSPICIOUS_DOMAINS if "sbi" in u or "bank" in u or "verify" in u]),
                 "channel": "UPI"
             }
         })
@@ -147,7 +181,8 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
     for _ in range(50):
         sc_id += 1
         c_id = random.choice(CUSTOMERS)
-        amt = round(random.uniform(800.0, 8000.0), 2)
+        amt = round(random.uniform(500.0, 9500.0), 2)
+        ref = random.randint(10000, 99999)
         scenarios.append({
             "scenario_id": f"EVAL-{sc_id:04d}",
             "scenario_name": "Suspicious Phishing Destination",
@@ -158,7 +193,7 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
                 "amount": amt,
                 "recipient_id": "RCP-006",
                 "claimed_merchant": "India Post Express",
-                "payment_note": "International parcel duty clearance payment",
+                "payment_note": f"International parcel duty clearance payment ref #{ref}",
                 "url": random.choice(SUSPICIOUS_DOMAINS),
                 "channel": "UPI"
             }
@@ -168,7 +203,8 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
     for _ in range(40):
         sc_id += 1
         c_id = random.choice(CUSTOMERS)
-        amt = round(random.uniform(2000.0, 15000.0), 2)
+        amt = round(random.uniform(1500.0, 18000.0), 2)
+        ref = random.randint(10000, 99999)
         scenarios.append({
             "scenario_id": f"EVAL-{sc_id:04d}",
             "scenario_name": "Unverified Recipient Anomaly",
@@ -178,8 +214,8 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
                 "customer_id": c_id,
                 "amount": amt,
                 "recipient_id": "RCP-003", # New local merchant
-                "claimed_merchant": "Local General Store",
-                "payment_note": "Payment for supplies",
+                "claimed_merchant": "Local Hardware Store",
+                "payment_note": f"Payment for supplies ref #{ref}",
                 "url": "https://sbi.co.in/portal/pay",
                 "channel": "UPI"
             }
@@ -189,7 +225,8 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
     for _ in range(40):
         sc_id += 1
         c_id = random.choice(CUSTOMERS)
-        amt = round(random.uniform(4000.0, 18000.0), 2)
+        amt = round(random.uniform(3000.0, 22000.0), 2)
+        ref = random.randint(10000, 99999)
         scenarios.append({
             "scenario_id": f"EVAL-{sc_id:04d}",
             "scenario_name": "Conflicting Merchant Identity & URL",
@@ -200,8 +237,8 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
                 "amount": amt,
                 "recipient_id": "RCP-004", # Mismatched personal payee
                 "claimed_merchant": "City Power Supply",
-                "payment_note": "Monthly bill payment",
-                "url": "http://elect-pay-bill.top/pay",
+                "payment_note": f"Monthly bill payment ref #{ref}",
+                "url": random.choice([u for u in SUSPICIOUS_DOMAINS if "elect" in u or "bill" in u]),
                 "channel": "UPI"
             }
         })
@@ -210,7 +247,8 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
     for _ in range(30):
         sc_id += 1
         c_id = random.choice(CUSTOMERS)
-        amt = round(random.uniform(300.0, 3500.0), 2)
+        amt = round(random.uniform(200.0, 4500.0), 2)
+        ref = random.randint(10000, 99999)
         scenarios.append({
             "scenario_id": f"EVAL-{sc_id:04d}",
             "scenario_name": "Ambiguous Payment Request",
@@ -221,8 +259,8 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
                 "amount": amt,
                 "recipient_id": "RCP-005",
                 "claimed_merchant": "Customer Service Portal",
-                "payment_note": "Customer support fee Rs 199",
-                "url": "http://refund-support-portal.site/fee",
+                "payment_note": f"Customer support fee Rs {amt} ref #{ref}",
+                "url": random.choice([u for u in SUSPICIOUS_DOMAINS if "refund" in u or "support" in u]),
                 "channel": "UPI"
             }
         })
@@ -235,4 +273,4 @@ def generate_expanded_evaluation_dataset(seed: int = 42, target_count: int = 400
 
 if __name__ == "__main__":
     data = generate_expanded_evaluation_dataset()
-    print(f"[+] Expanded synthetic evaluation dataset generated successfully: {len(data)} scenarios saved to {EVAL_DATASET_PATH}")
+    print(f"[+] Expanded synthetic evaluation dataset regenerated successfully: {len(data)} scenarios saved to {EVAL_DATASET_PATH}")
