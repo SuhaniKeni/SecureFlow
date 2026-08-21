@@ -22,6 +22,7 @@ frontend/dist/
 frontend/dist-ssr/
 *.local
 
-# OS Generated Files
+# OS & DB Generated Files
 .DS_Store
 Thumbs.db
+*.db-journal
