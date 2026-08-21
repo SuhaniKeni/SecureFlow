@@ -1,0 +1,44 @@
+{
+  "datasets": [
+    {
+      "dataset_name": "UCI SMS Spam Collection",
+      "dataset_id": "uci_sms_spam",
+      "source": "https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "download_date": "2026-08-21",
+      "actual_file_size_bytes": 486480,
+      "record_count": 5574,
+      "features": [
+        "message"
+      ],
+      "target": "label (ham/spam) / is_spam (0/1)",
+      "intended_use": "Scam-Context NLP Engine training & benchmarking (spam vs ham text baseline classification)",
+      "limitations": "Collected in 2012; mobile SMS context. Does not include UPI/payment app specific terms, requiring domain-specific lexicon integration."
+    },
+    {
+      "dataset_name": "PhiUSIIL Phishing URL Dataset",
+      "dataset_id": "phiusiil_phishing_url",
+      "source": "https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "download_date": "2026-08-21",
+      "actual_file_size_bytes": 56854345,
+      "record_count": 235795,
+      "features": [
+        "FILENAME",
+        "URL",
+        "URLLength",
+        "Domain",
+        "DomainLength",
+        "IsDomainIP",
+        "TLD",
+        "URLSimilarityIndex",
+        "CharContinuationRate",
+        "TLDLegitimateProb",
+        "... (46 more)"
+      ],
+      "target": "label (0=legitimate, 1=phishing)",
+      "intended_use": "URL / Destination Intelligence Engine feature extraction (lexical, domain, and security indicators)",
+      "limitations": "High-dimensional dataset (54 features); light extraction required for low-latency payment gateway scoring."
+    }
+  ]
+}

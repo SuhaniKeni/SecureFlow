@@ -1,0 +1,6002 @@
+[
+  {
+    "scenario_id": "EVAL-0001",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-008",
+      "amount": 257.52,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for shopping order #46048 via UPI",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0002",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 435.74,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Monthly electricity bill payment ref #81482",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0003",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 268.53,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for shopping order #38657 via UPI",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0004",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 1490.86,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for laptop order #95181",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0005",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 1233.18,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Monthly electricity bill payment ref #46463",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0006",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-028",
+      "amount": 982.58,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for shopping order #30379 via UPI",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0007",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 1073.83,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Quarterly fee payment ref #57052",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0008",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 1878.38,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Monthly electricity bill payment ref #80284",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0009",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-036",
+      "amount": 874.31,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0010",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-013",
+      "amount": 1820.52,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for laptop order #16006",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0011",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 2167.23,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Local hardware purchase tools",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0012",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 2118.45,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Quarterly fee payment ref #31319",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0013",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-043",
+      "amount": 814.05,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Payment for laptop order #99593",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0014",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 593.62,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for shopping order #42087 via UPI",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0015",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 2475.9,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for laptop order #93886",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0016",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 945.85,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Payment for shopping order #17331 via UPI",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0017",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 815.8,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0018",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-014",
+      "amount": 1707.51,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for laptop order #61856",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0019",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-017",
+      "amount": 521.15,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0020",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-038",
+      "amount": 1185.4,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Local hardware purchase tools",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0021",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-009",
+      "amount": 1371.91,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Monthly electricity bill payment ref #21915",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0022",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 567.96,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local hardware purchase tools",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0023",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-025",
+      "amount": 1077.72,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0024",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 1764.65,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for laptop order #25014",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0025",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-050",
+      "amount": 1674.21,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Quarterly fee payment ref #24621",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0026",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 207.46,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0027",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-007",
+      "amount": 2202.19,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for laptop order #49117",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0028",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-013",
+      "amount": 551.53,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0029",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-039",
+      "amount": 945.56,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Monthly electricity bill payment ref #12552",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0030",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 333.23,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Monthly electricity bill payment ref #84364",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0031",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 2076.85,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for shopping order #79822 via UPI",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0032",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 2377.75,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Quarterly fee payment ref #31643",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0033",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-028",
+      "amount": 2418.03,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for laptop order #80686",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0034",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-046",
+      "amount": 916.95,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Payment for laptop order #98039",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0035",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-034",
+      "amount": 1238.42,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for shopping order #42493 via UPI",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0036",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 1553.11,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0037",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-005",
+      "amount": 1828.03,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Payment for shopping order #17716 via UPI",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0038",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-022",
+      "amount": 362.97,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Quarterly fee payment ref #41195",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0039",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-014",
+      "amount": 1440.24,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0040",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 2057.24,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Monthly electricity bill payment ref #34957",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0041",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-028",
+      "amount": 1014.88,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Local hardware purchase tools",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0042",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 1702.95,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Monthly electricity bill payment ref #94696",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0043",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-047",
+      "amount": 980.4,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for shopping order #24322 via UPI",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0044",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 1231.81,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Payment for shopping order #65296 via UPI",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0045",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 2211.32,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Local hardware purchase tools",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0046",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 1699.93,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Monthly electricity bill payment ref #80855",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0047",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-011",
+      "amount": 1134.75,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Payment for shopping order #73092 via UPI",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0048",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-011",
+      "amount": 1071.64,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Quarterly fee payment ref #61173",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0049",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-028",
+      "amount": 1802.16,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for laptop order #82845",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0050",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 636.77,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Monthly electricity bill payment ref #38534",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0051",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 340.2,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Monthly electricity bill payment ref #51104",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0052",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 1356.56,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for shopping order #79615 via UPI",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0053",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 2158.09,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0054",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 1128.68,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for shopping order #84668 via UPI",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0055",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 1624.58,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for laptop order #64948",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0056",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-034",
+      "amount": 927.65,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for shopping order #44179 via UPI",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0057",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-021",
+      "amount": 748.98,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for shopping order #61876 via UPI",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0058",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-020",
+      "amount": 1251.62,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Monthly electricity bill payment ref #19508",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0059",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 2491.02,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0060",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-017",
+      "amount": 504.65,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Monthly electricity bill payment ref #55745",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0061",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 562.82,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for laptop order #81200",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0062",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-042",
+      "amount": 1416.56,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0063",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-007",
+      "amount": 2359.54,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Quarterly fee payment ref #27601",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0064",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 1472.41,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Quarterly fee payment ref #45697",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0065",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-046",
+      "amount": 988.62,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Quarterly fee payment ref #93130",
+      "url": "https://bescom.co.in/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0066",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-017",
+      "amount": 2282.27,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Monthly electricity bill payment ref #16658",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0067",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 301.4,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for shopping order #53719 via UPI",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0068",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-011",
+      "amount": 1904.83,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for laptop order #82309",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0069",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 457.31,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0070",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-038",
+      "amount": 1470.81,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Payment for shopping order #66333 via UPI",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0071",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 2267.66,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Quarterly fee payment ref #15229",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0072",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 1733.95,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Routine grocery order payment",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0073",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 555.47,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Payment for shopping order #41029 via UPI",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0074",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 612.53,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Local hardware purchase tools",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0075",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 813.65,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Local hardware purchase tools",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0076",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 659.02,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Quarterly fee payment ref #70332",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0077",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 254.43,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Local hardware purchase tools",
+      "url": "https://bescom.co.in/pay",
+      "channel": "CARD"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0078",
+    "scenario_name": "Normal Payment: Amazon India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-005",
+      "amount": 2423.84,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "Quarterly fee payment ref #46585",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "NETBANKING"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0079",
+    "scenario_name": "Normal Payment: State Bank of India",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 1762.89,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "Quarterly fee payment ref #80282",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0080",
+    "scenario_name": "Normal Payment: BESCOM Electricity",
+    "category": "A_Normal_Legitimate",
+    "expected_action": "ALLOW",
+    "input": {
+      "customer_id": "CUST-017",
+      "amount": 610.71,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "Monthly electricity bill payment ref #44795",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0081",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-028",
+      "amount": 62284.36,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #51114 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0082",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-039",
+      "amount": 94211.79,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #25157 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0083",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 54503.94,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #15817 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0084",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-028",
+      "amount": 45084.56,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #80575 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0085",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-047",
+      "amount": 92013.16,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #97900 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0086",
+    "scenario_name": "High-Value Legitimate: BESCOM Electricity",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 66564.87,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "High-value purchase ref #97062 at BESCOM Electricity",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0087",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 60695.78,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #26334 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0088",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-020",
+      "amount": 70356.13,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #97410 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0089",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-021",
+      "amount": 65120.02,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #48752 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0090",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-009",
+      "amount": 54592.0,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #97153 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0091",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 82406.73,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #32810 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0092",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 60047.49,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #81819 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0093",
+    "scenario_name": "High-Value Legitimate: BESCOM Electricity",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-020",
+      "amount": 59345.69,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "High-value purchase ref #66346 at BESCOM Electricity",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0094",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-039",
+      "amount": 77735.28,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #70946 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0095",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-029",
+      "amount": 78781.36,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #77000 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0096",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 53484.57,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #21114 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0097",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-033",
+      "amount": 78192.69,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #91167 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0098",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 85921.17,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #40784 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0099",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-020",
+      "amount": 56232.03,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #36100 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0100",
+    "scenario_name": "High-Value Legitimate: BESCOM Electricity",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 47310.69,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "High-value purchase ref #72277 at BESCOM Electricity",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0101",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-050",
+      "amount": 48641.41,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #64321 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0102",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 54721.76,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #60328 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0103",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 57199.22,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #95990 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0104",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 89632.99,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #23970 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0105",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 53794.33,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #77889 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0106",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 72870.29,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #25906 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0107",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-009",
+      "amount": 85070.83,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #97500 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0108",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-036",
+      "amount": 74772.62,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #68008 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0109",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-047",
+      "amount": 89601.01,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #65933 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0110",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-029",
+      "amount": 89860.41,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #72216 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0111",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-017",
+      "amount": 82588.84,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #93579 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0112",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-050",
+      "amount": 83883.74,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #73517 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0113",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 58729.87,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #20155 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0114",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 56724.68,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #54020 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0115",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 49028.88,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #29769 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0116",
+    "scenario_name": "High-Value Legitimate: BESCOM Electricity",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-025",
+      "amount": 79697.49,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "High-value purchase ref #38043 at BESCOM Electricity",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0117",
+    "scenario_name": "High-Value Legitimate: BESCOM Electricity",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-027",
+      "amount": 65379.97,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "High-value purchase ref #81121 at BESCOM Electricity",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0118",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-027",
+      "amount": 48113.29,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #65069 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0119",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-050",
+      "amount": 74203.97,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #12560 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0120",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-025",
+      "amount": 68848.99,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #56105 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0121",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-049",
+      "amount": 64499.33,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #64921 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0122",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 81731.7,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #89069 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0123",
+    "scenario_name": "High-Value Legitimate: BESCOM Electricity",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 55971.08,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "High-value purchase ref #67125 at BESCOM Electricity",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0124",
+    "scenario_name": "High-Value Legitimate: Amazon India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 64442.86,
+      "recipient_id": "RCP-002",
+      "claimed_merchant": "Amazon India",
+      "payment_note": "High-value purchase ref #97670 at Amazon India",
+      "url": "https://amazon.in/checkout/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0125",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 81209.07,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #71261 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0126",
+    "scenario_name": "High-Value Legitimate: BESCOM Electricity",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 71706.18,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "High-value purchase ref #61645 at BESCOM Electricity",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0127",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 78149.99,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #21003 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0128",
+    "scenario_name": "High-Value Legitimate: State Bank of India",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-028",
+      "amount": 51784.97,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "High-value purchase ref #70515 at State Bank of India",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0129",
+    "scenario_name": "High-Value Legitimate: BESCOM Electricity",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 58007.82,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "High-value purchase ref #52906 at BESCOM Electricity",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0130",
+    "scenario_name": "High-Value Legitimate: BESCOM Electricity",
+    "category": "B_Legitimate_Unusual",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 61342.29,
+      "recipient_id": "RCP-001",
+      "claimed_merchant": "BESCOM Electricity",
+      "payment_note": "High-value purchase ref #59692 at BESCOM Electricity",
+      "url": "https://bescom.co.in/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0131",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 9396.1,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 9396.1 at refund portal.",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0132",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-017",
+      "amount": 10266.56,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Electricity power line will be disconnected tonight at 9.30pm. Pay overdue bill Rs 10266.56 immediately",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0133",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 7163.9,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0134",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-042",
+      "amount": 2220.49,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Electricity power line will be disconnected tonight at 9.30pm. Pay overdue bill Rs 2220.49 immediately",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0135",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-049",
+      "amount": 1825.81,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0136",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 8024.02,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0137",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 8529.32,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0138",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 8844.38,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 8844.38. Pay immediately to release.",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0139",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-011",
+      "amount": 7861.87,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Urgent: Electric bill due. Avoid penalty of Rs 5000. Pay now at link.",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0140",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-008",
+      "amount": 9666.81,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 9666.81. Pay immediately to release.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0141",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-007",
+      "amount": 7576.19,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Income tax refund pending. Pay service tax Rs 7576.19 immediately or account blocked.",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0142",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 11034.27,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 11034.27 at refund portal.",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0143",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-046",
+      "amount": 3582.46,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Urgent: Electric bill due. Avoid penalty of Rs 5000. Pay now at link.",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0144",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 4049.92,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 4049.92. Pay immediately to release.",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0145",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 7804.32,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Income tax refund pending. Pay service tax Rs 7804.32 immediately or account blocked.",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0146",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 5145.64,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Urgent: Electric bill due. Avoid penalty of Rs 5000. Pay now at link.",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0147",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 2224.05,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 2224.05. Pay immediately to release.",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0148",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 10420.54,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 10420.54 at refund portal.",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0149",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-007",
+      "amount": 6052.0,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Urgent: Electric bill due. Avoid penalty of Rs 5000. Pay now at link.",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0150",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 8926.74,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0151",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-047",
+      "amount": 6978.34,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 6978.34. Pay immediately to release.",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0152",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 9986.09,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 9986.09 at refund portal.",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0153",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 6073.53,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Income tax refund pending. Pay service tax Rs 6073.53 immediately or account blocked.",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0154",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 4884.2,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Electricity power line will be disconnected tonight at 9.30pm. Pay overdue bill Rs 4884.2 immediately",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0155",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 10757.13,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 10757.13 at refund portal.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0156",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 7908.48,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 7908.48. Pay immediately to release.",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0157",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 6690.22,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0158",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 3727.26,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 3727.26. Pay immediately to release.",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0159",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-022",
+      "amount": 4436.41,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Urgent: Electric bill due. Avoid penalty of Rs 5000. Pay now at link.",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0160",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 7335.81,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0161",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 4034.24,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 4034.24 at refund portal.",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0162",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-036",
+      "amount": 9460.73,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 9460.73 at refund portal.",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0163",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-042",
+      "amount": 8974.35,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Electricity power line will be disconnected tonight at 9.30pm. Pay overdue bill Rs 8974.35 immediately",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0164",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 4589.47,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Urgent: Electric bill due. Avoid penalty of Rs 5000. Pay now at link.",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0165",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 4715.16,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 4715.16. Pay immediately to release.",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0166",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 7311.47,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 7311.47 at refund portal.",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0167",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 7279.08,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Urgent: Electric bill due. Avoid penalty of Rs 5000. Pay now at link.",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0168",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 4344.62,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0169",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-008",
+      "amount": 9073.49,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Electricity power line will be disconnected tonight at 9.30pm. Pay overdue bill Rs 9073.49 immediately",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0170",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 7126.57,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Urgent: Electric bill due. Avoid penalty of Rs 5000. Pay now at link.",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0171",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-012",
+      "amount": 3511.18,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 3511.18 at refund portal.",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0172",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 9108.14,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Income tax refund pending. Pay service tax Rs 9108.14 immediately or account blocked.",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0173",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-039",
+      "amount": 4471.49,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0174",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 3888.57,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 3888.57. Pay immediately to release.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0175",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 8934.19,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 8934.19. Pay immediately to release.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0176",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 11730.1,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 11730.1. Pay immediately to release.",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0177",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-045",
+      "amount": 11412.94,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 11412.94 at refund portal.",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0178",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-007",
+      "amount": 10663.56,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 10663.56. Pay immediately to release.",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0179",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 6526.5,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0180",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 4151.02,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 4151.02 at refund portal.",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0181",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-008",
+      "amount": 10132.21,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 10132.21 at refund portal.",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0182",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-005",
+      "amount": 7558.72,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Electricity power line will be disconnected tonight at 9.30pm. Pay overdue bill Rs 7558.72 immediately",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0183",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 3066.57,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "COURIER ALERT: International parcel held at customs due to unpaid duty Rs 3066.57. Pay immediately to release.",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0184",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 11936.14,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Income tax refund pending. Pay service tax Rs 11936.14 immediately or account blocked.",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0185",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-049",
+      "amount": 5869.83,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Income tax refund pending. Pay service tax Rs 5869.83 immediately or account blocked.",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0186",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 9644.78,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 9644.78 at refund portal.",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0187",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-029",
+      "amount": 4622.21,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "Dear User, customer support refund of Rs 5000 is approved. Pay processing fee of Rs 4622.21 at refund portal.",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0188",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-020",
+      "amount": 7470.61,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Income tax refund pending. Pay service tax Rs 7470.61 immediately or account blocked.",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0189",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 2541.95,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "DEAR CUSTOMER, your account is suspended due to missing KYC. Update immediately at link or legal action taken.",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0190",
+    "scenario_name": "Social Engineering Disconnection Scam",
+    "category": "C_Social_Engineering_Attack",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 3715.76,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "BESCOM Electricity Board",
+      "payment_note": "URGENT: Electricity power line will be disconnected tonight at 9.30pm. Pay overdue bill Rs 3715.76 immediately",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0191",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-011",
+      "amount": 8277.03,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0192",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-036",
+      "amount": 4651.43,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0193",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 11987.39,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0194",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-045",
+      "amount": 16063.85,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0195",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 3718.08,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0196",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 18553.03,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0197",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-045",
+      "amount": 21911.35,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0198",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-005",
+      "amount": 18122.47,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0199",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-017",
+      "amount": 20332.22,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0200",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 15975.37,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0201",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-013",
+      "amount": 12353.06,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0202",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 7945.81,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0203",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 22985.05,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0204",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 4571.02,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0205",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-011",
+      "amount": 20437.83,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0206",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-039",
+      "amount": 19477.07,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0207",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 23266.24,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0208",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-029",
+      "amount": 5735.78,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0209",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-045",
+      "amount": 9690.01,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0210",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 23738.88,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0211",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-033",
+      "amount": 14879.59,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0212",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-029",
+      "amount": 4769.72,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0213",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 22567.3,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0214",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 10091.07,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0215",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-017",
+      "amount": 3569.03,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0216",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 24162.04,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0217",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 15916.7,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0218",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 24990.59,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0219",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 21071.27,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0220",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 3885.1,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0221",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-049",
+      "amount": 6854.2,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0222",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-034",
+      "amount": 17333.21,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0223",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 6992.76,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0224",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-038",
+      "amount": 12589.47,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0225",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 24319.22,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0226",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 10655.14,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0227",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-022",
+      "amount": 10063.28,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0228",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-007",
+      "amount": 21870.13,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0229",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-022",
+      "amount": 12056.19,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0230",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 9340.79,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0231",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 20898.45,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0232",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-036",
+      "amount": 3807.34,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0233",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-006",
+      "amount": 9919.38,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0234",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-021",
+      "amount": 5550.28,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0235",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-050",
+      "amount": 11891.85,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0236",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-033",
+      "amount": 21148.4,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0237",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 17468.53,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0238",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 13163.48,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0239",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 7126.82,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0240",
+    "scenario_name": "Merchant Identity Impersonation",
+    "category": "D_Merchant_Impersonation",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 16697.95,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "State Bank of India",
+      "payment_note": "DEAR CUSTOMER, your account is suspended. Pay fee immediately to unlock.",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0241",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 5302.94,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0242",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 2265.62,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0243",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-009",
+      "amount": 7479.24,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0244",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-045",
+      "amount": 4289.92,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0245",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 5183.88,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0246",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-046",
+      "amount": 1940.32,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0247",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 4776.21,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0248",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 7944.25,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0249",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 7618.84,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0250",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 4388.3,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0251",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 4463.88,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0252",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-027",
+      "amount": 6810.01,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0253",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 4088.86,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0254",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-025",
+      "amount": 2172.39,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0255",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-033",
+      "amount": 6173.31,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0256",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-005",
+      "amount": 2788.98,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0257",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-027",
+      "amount": 3247.1,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0258",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-033",
+      "amount": 2723.64,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0259",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 6027.57,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0260",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-038",
+      "amount": 4975.45,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0261",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 7029.88,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0262",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 4287.26,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0263",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-036",
+      "amount": 6292.68,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0264",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 7516.54,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0265",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-013",
+      "amount": 7861.58,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0266",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 3557.39,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0267",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-050",
+      "amount": 3757.58,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0268",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 4205.43,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0269",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-025",
+      "amount": 3579.77,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0270",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-042",
+      "amount": 7861.89,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0271",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 1708.97,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0272",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-022",
+      "amount": 7061.84,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0273",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-029",
+      "amount": 1517.92,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0274",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 6001.6,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0275",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-042",
+      "amount": 7783.69,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0276",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 6426.98,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0277",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-022",
+      "amount": 5287.47,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0278",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-042",
+      "amount": 1378.27,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0279",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 6987.26,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0280",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-021",
+      "amount": 5312.95,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0281",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 7081.16,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0282",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 1292.63,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0283",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 7430.69,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0284",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 1450.73,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0285",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-049",
+      "amount": 5362.98,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://verify-account-now.info/sbi",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0286",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-007",
+      "amount": 3994.49,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bill-pay-fast.online/electricity",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0287",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-020",
+      "amount": 7304.65,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0288",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-021",
+      "amount": 6532.23,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://customs-clearance-pay.com/duty",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0289",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-023",
+      "amount": 3498.86,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://bank-kyc-update.online/login",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0290",
+    "scenario_name": "Suspicious Phishing Destination",
+    "category": "E_Suspicious_Destination",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 4624.4,
+      "recipient_id": "RCP-006",
+      "claimed_merchant": "India Post Express",
+      "payment_note": "International parcel duty clearance payment",
+      "url": "http://incometax-refund-gov.in.net/claim",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0291",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 12302.75,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0292",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-011",
+      "amount": 4275.9,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0293",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 13320.91,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0294",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 10880.75,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0295",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 13866.78,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0296",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 5018.45,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0297",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 5301.71,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0298",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-017",
+      "amount": 10668.93,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0299",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 13715.72,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0300",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 9105.78,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0301",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-005",
+      "amount": 7742.49,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0302",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-023",
+      "amount": 14839.47,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0303",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-020",
+      "amount": 10306.2,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0304",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-028",
+      "amount": 10974.08,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0305",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 12988.95,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0306",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-013",
+      "amount": 14991.86,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0307",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 3386.49,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0308",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-025",
+      "amount": 9435.0,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0309",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 5846.34,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0310",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-045",
+      "amount": 5838.0,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0311",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-043",
+      "amount": 7145.47,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0312",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-001",
+      "amount": 9357.08,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0313",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 12118.05,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0314",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 13838.02,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0315",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 8457.45,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0316",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 12084.63,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0317",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 9891.84,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0318",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-023",
+      "amount": 4847.06,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0319",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-013",
+      "amount": 10071.59,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0320",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 11822.51,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0321",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-050",
+      "amount": 10569.36,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0322",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-009",
+      "amount": 10167.23,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0323",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-041",
+      "amount": 10402.43,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0324",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-020",
+      "amount": 12251.94,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0325",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 9534.46,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0326",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-047",
+      "amount": 3708.35,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0327",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 6247.35,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0328",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-027",
+      "amount": 4283.32,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0329",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-009",
+      "amount": 12224.67,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0330",
+    "scenario_name": "Unverified Recipient Anomaly",
+    "category": "F_Recipient_Anomalies",
+    "expected_action": "VERIFY",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 8901.08,
+      "recipient_id": "RCP-003",
+      "claimed_merchant": "Local General Store",
+      "payment_note": "Payment for supplies",
+      "url": "https://sbi.co.in/portal/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0331",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 15626.62,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0332",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-017",
+      "amount": 16796.69,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0333",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-031",
+      "amount": 17543.38,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0334",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-019",
+      "amount": 14451.83,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0335",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-022",
+      "amount": 15259.26,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0336",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 17480.51,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0337",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 14558.12,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0338",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 16041.97,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0339",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-047",
+      "amount": 13441.69,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0340",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 17541.78,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0341",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-036",
+      "amount": 9120.85,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0342",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 4194.86,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0343",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 5730.24,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0344",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 13419.6,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0345",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 7670.26,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0346",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-025",
+      "amount": 15513.84,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0347",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 5516.85,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0348",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 10600.68,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0349",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 16379.29,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0350",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-036",
+      "amount": 8592.09,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0351",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 7099.14,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0352",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-005",
+      "amount": 12895.65,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0353",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 16731.43,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0354",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-020",
+      "amount": 13089.35,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0355",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-008",
+      "amount": 5956.88,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0356",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-003",
+      "amount": 8261.1,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0357",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 5625.69,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0358",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 16421.63,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0359",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-009",
+      "amount": 9441.04,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0360",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 13386.81,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0361",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 13750.78,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0362",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 9867.77,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0363",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 14172.39,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0364",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-027",
+      "amount": 13168.91,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0365",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-032",
+      "amount": 12619.13,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0366",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-018",
+      "amount": 4458.03,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0367",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 7041.78,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0368",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-029",
+      "amount": 17307.77,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0369",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-024",
+      "amount": 5390.96,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0370",
+    "scenario_name": "Conflicting Merchant Identity & URL",
+    "category": "G_Conflicting_Signals",
+    "expected_action": "BLOCK",
+    "input": {
+      "customer_id": "CUST-044",
+      "amount": 9142.69,
+      "recipient_id": "RCP-004",
+      "claimed_merchant": "City Power Supply",
+      "payment_note": "Monthly bill payment",
+      "url": "http://elect-pay-bill.top/pay",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0371",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-042",
+      "amount": 1447.76,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0372",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-026",
+      "amount": 1182.82,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0373",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-008",
+      "amount": 3336.83,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0374",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 593.35,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0375",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-014",
+      "amount": 2353.45,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0376",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-039",
+      "amount": 3407.5,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0377",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 2817.74,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0378",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 3464.23,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0379",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-037",
+      "amount": 956.66,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0380",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-049",
+      "amount": 2073.46,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0381",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-038",
+      "amount": 991.04,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0382",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-015",
+      "amount": 1351.39,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0383",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 2823.66,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0384",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-039",
+      "amount": 309.07,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0385",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-010",
+      "amount": 3460.09,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0386",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-035",
+      "amount": 1102.09,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0387",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-012",
+      "amount": 651.76,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0388",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 721.77,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0389",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-023",
+      "amount": 2827.95,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0390",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-016",
+      "amount": 2184.33,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0391",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-002",
+      "amount": 857.59,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0392",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-004",
+      "amount": 705.63,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0393",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-027",
+      "amount": 1983.47,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0394",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-048",
+      "amount": 503.39,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0395",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-029",
+      "amount": 2789.65,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0396",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-033",
+      "amount": 2199.73,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0397",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-029",
+      "amount": 1912.28,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0398",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-040",
+      "amount": 438.77,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0399",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-043",
+      "amount": 1968.64,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  },
+  {
+    "scenario_id": "EVAL-0400",
+    "scenario_name": "Ambiguous Payment Request",
+    "category": "H_Ambiguous_Cases",
+    "expected_action": "HOLD",
+    "input": {
+      "customer_id": "CUST-030",
+      "amount": 2358.69,
+      "recipient_id": "RCP-005",
+      "claimed_merchant": "Customer Service Portal",
+      "payment_note": "Customer support fee Rs 199",
+      "url": "http://refund-support-portal.site/fee",
+      "channel": "UPI"
+    }
+  }
+]

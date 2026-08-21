@@ -1,0 +1,51 @@
+# =====================================================================
+# SecureFlow: FastAPI Backend Dockerfile
+# =====================================================================
+
+FROM python:3.11-slim as builder
+
+WORKDIR /app
+
+# Install system dependencies required for compilation
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Final Runtime Stage
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install runtime curl for health checks
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy installed packages from builder
+COPY --from=builder /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY --from=builder /usr/local/bin /usr/local/bin
+
+# Copy project codebase and pre-trained models
+COPY secureflow/ ./secureflow/
+COPY data/ ./data/
+COPY docs/ ./docs/
+
+# Set Environment Variables
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app \
+    DATABASE_URL=sqlite:///./data/secureflow.db
+
+# Expose FastAPI server port
+EXPOSE 8000
+
+# Container Healthcheck
+HEALTHCHECK --interval=15s --timeout=5s --start-period=10s --retries=3 \
+    CMD curl -f http://localhost:8000/health || exit 1
+
+# Start Uvicorn Server
+CMD ["uvicorn", "secureflow.api.main:app", "--host", "0.0.0.0", "--port", "8000"]

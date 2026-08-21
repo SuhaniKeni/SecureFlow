@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-08-21T08:09:44.789018+00:00",
+  "total_scenarios_evaluated": 10,
+  "baseline_model": {
+    "precision": 0.8,
+    "recall": 0.5714,
+    "f1_score": 0.6667,
+    "pr_auc": 0.4571,
+    "scam_protection_rate": 0.5714,
+    "legitimate_payment_preservation_rate": 0.6667,
+    "false_intervention_rate": 0.3333,
+    "unnecessary_verification_rate": 0.0,
+    "unnecessary_blocking_rate": 0.3333,
+    "action_selection_accuracy": 0.5,
+    "mean_latency_ms": 0.0
+  },
+  "secureflow_adaptive_engine": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "pr_auc": 1.0,
+    "scam_protection_rate": 1.0,
+    "legitimate_payment_preservation_rate": 1.0,
+    "false_intervention_rate": 0.6667,
+    "unnecessary_verification_rate": 0.0,
+    "unnecessary_blocking_rate": 0.0,
+    "action_selection_accuracy": 1.0,
+    "mean_latency_ms": 8.75
+  },
+  "delta_improvements": {
+    "f1_improvement": 0.3333,
+    "scam_protection_boost": 0.4286,
+    "false_blocking_reduction": 0.3333,
+    "action_accuracy_boost": 0.5
+  }
+}

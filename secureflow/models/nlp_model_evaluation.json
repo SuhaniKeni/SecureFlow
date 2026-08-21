@@ -1,0 +1,73 @@
+{
+  "best_model": "TF-IDF + Multinomial Naive Bayes",
+  "all_models_evaluated": [
+    {
+      "model_name": "TF-IDF + Logistic Regression (Baseline)",
+      "precision": 0.9495,
+      "recall": 0.8393,
+      "f1_score": 0.891,
+      "pr_auc": 0.9735,
+      "confusion_matrix": [
+        [
+          720,
+          5
+        ],
+        [
+          18,
+          94
+        ]
+      ]
+    },
+    {
+      "model_name": "TF-IDF + Multinomial Naive Bayes",
+      "precision": 0.9159,
+      "recall": 0.875,
+      "f1_score": 0.895,
+      "pr_auc": 0.962,
+      "confusion_matrix": [
+        [
+          716,
+          9
+        ],
+        [
+          14,
+          98
+        ]
+      ]
+    },
+    {
+      "model_name": "TF-IDF + Random Forest",
+      "precision": 1.0,
+      "recall": 0.6696,
+      "f1_score": 0.8021,
+      "pr_auc": 0.9637,
+      "confusion_matrix": [
+        [
+          725,
+          0
+        ],
+        [
+          37,
+          75
+        ]
+      ]
+    },
+    {
+      "model_name": "TF-IDF + Gradient Boosting",
+      "precision": 0.9485,
+      "recall": 0.8214,
+      "f1_score": 0.8804,
+      "pr_auc": 0.944,
+      "confusion_matrix": [
+        [
+          720,
+          5
+        ],
+        [
+          20,
+          92
+        ]
+      ]
+    }
+  ]
+}

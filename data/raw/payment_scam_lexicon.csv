@@ -1,0 +1,18 @@
+category,keyword,severity_weight,description
+urgency,overdue,0.8,Urgent bill payment demand
+urgency,immediately,0.9,Time constraint pressure
+urgency,within 10 mins,0.85,Short deadline pressure
+urgency,disconnection notice,0.95,Utility cutoff threat
+impersonation,electricity board,0.9,Utility provider impersonation
+impersonation,customs clearance,0.85,Logistics/Customs officer fake demand
+impersonation,customer care team,0.75,Fake support representative
+impersonation,bank manager,0.9,Financial authority impersonation
+threat,legal action,0.95,Court/police legal threat
+threat,police complaint,0.95,Law enforcement coercion
+threat,account blocked,0.9,Account restriction threat
+fraud_lure,refund pending,0.8,Fake cashback or refund bait
+fraud_lure,double your money,0.95,Ponzi scheme / high return promise
+fraud_lure,lottery winner,0.95,Fake prize claim
+action_request,pay now,0.7,Direct payment link call-to-action
+action_request,click link to approve,0.85,Phishing URL click request
+action_request,share upi pin,1.0,Credential theft attempt

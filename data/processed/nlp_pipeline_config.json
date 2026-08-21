@@ -1,0 +1,15 @@
+{
+  "max_features": 500,
+  "vocabulary_size": 500,
+  "heuristic_features": [
+    "urgency_count",
+    "impersonation_count",
+    "threat_count",
+    "has_url",
+    "msg_len"
+  ],
+  "seed": 42,
+  "train_samples": 3901,
+  "val_samples": 836,
+  "test_samples": 837
+}
