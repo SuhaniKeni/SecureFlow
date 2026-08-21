@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-21T09:13:05.803888+00:00",
+  "timestamp": "2026-08-21T11:09:06.926678+00:00",
   "total_scenarios_evaluated": 10,
   "baseline_model": {
     "precision": 0.8,
@@ -12,7 +12,7 @@
     "unnecessary_verification_rate": 0.0,
     "unnecessary_blocking_rate": 0.3333,
     "action_selection_accuracy": 0.5,
-    "mean_latency_ms": 0.0
+    "mean_latency_ms": 0.01
   },
   "secureflow_adaptive_engine": {
     "precision": 1.0,
@@ -25,7 +25,7 @@
     "unnecessary_verification_rate": 0.0,
     "unnecessary_blocking_rate": 0.0,
     "action_selection_accuracy": 1.0,
-    "mean_latency_ms": 5.82
+    "mean_latency_ms": 16.72
   },
   "delta_improvements": {
     "f1_improvement": 0.3333,

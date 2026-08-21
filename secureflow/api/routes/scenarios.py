@@ -5,20 +5,14 @@ from secureflow.db.database import get_db_session
 from secureflow.db.models import Scenario, Transaction
 from secureflow.api.schemas import ScenarioRunRequest, PaymentAnalysisRequest, PaymentAnalysisResponse
 from secureflow.api.routes.payments import analyze_payment
+from secureflow.scenarios.attack_simulator import BENCHMARK_SCENARIOS
 
 router = APIRouter(prefix="/scenarios", tags=["Scenarios"])
 
-BENCHMARK_SCENARIO_PAYLOADS = {
-    "SCN-001": PaymentAnalysisRequest(customer_id="CUST-001", amount=1450.00, recipient_id="RCP-001", claimed_merchant="BESCOM Electricity", payment_note="Monthly electricity bill payment ref #10492", url="https://bescom.co.in/pay", channel="UPI"),
-    "SCN-002": PaymentAnalysisRequest(customer_id="CUST-001", amount=8742.00, recipient_id="RCP-004", claimed_merchant="BESCOM Electricity Board", payment_note="URGENT: Electricity power line will be disconnected tonight at 9.30pm. Pay overdue bill Rs 8742 immediately", url="http://elect-pay-bill.top/pay", channel="UPI"),
-    "SCN-003": PaymentAnalysisRequest(customer_id="CUST-001", amount=15000.00, recipient_id="RCP-004", claimed_merchant="HDFC Bank Online", payment_note="IMPORTANT: Your HDFC Bank account will be suspended. Update KYC details immediately", url="http://bank-kyc-update.online/hdfc", channel="UPI"),
-    "SCN-004": PaymentAnalysisRequest(customer_id="CUST-001", amount=1499.00, recipient_id="RCP-004", claimed_merchant="India Post Courier", payment_note="Package delivery on hold due to missing customs clearance fee", url="http://customs-clearance-pay.com/track", channel="UPI"),
-    "SCN-005": PaymentAnalysisRequest(customer_id="CUST-001", amount=199.00, recipient_id="RCP-004", claimed_merchant="Customer Support Portal", payment_note="Pay Rs 199 registration charge for instant Rs 15,000 refund processing", url="http://refund-support-portal.site/verify", channel="UPI"),
-    "SCN-006": PaymentAnalysisRequest(customer_id="CUST-001", amount=850.00, recipient_id="RCP-004", claimed_merchant="Income Tax Department", payment_note="Income tax refund approved. Pay fee to release Rs 45,000 credit", url="http://incometax-refund-gov.in.net/pay", channel="UPI"),
-    "SCN-007": PaymentAnalysisRequest(customer_id="CUST-001", amount=85000.00, recipient_id="RCP-002", claimed_merchant="Amazon India", payment_note="Payment for Apple Laptop order #940182 via Amazon Pay", url="https://amazon.in/checkout/pay", channel="UPI"),
-    "SCN-008": PaymentAnalysisRequest(customer_id="CUST-002", amount=3200.00, recipient_id="RCP-003", claimed_merchant="Local Hardware Store", payment_note="Purchase of construction tools", url="https://sbi.co.in/portal/pay", channel="UPI"),
-    "SCN-009": PaymentAnalysisRequest(customer_id="CUST-001", amount=4500.00, recipient_id="RCP-004", claimed_merchant="City Municipal Utility", payment_note="Water bill clearance", url="http://elect-pay-bill.top/pay", channel="UPI"),
-    "SCN-010": PaymentAnalysisRequest(customer_id="CUST-001", amount=12450.00, recipient_id="RCP-004", claimed_merchant="BESCOM Electricity", payment_note="Electricity tariff clearance", url="https://bescom.co.in/pay", channel="UPI"),
+# Dynamically construct lookup map from BENCHMARK_SCENARIOS
+BENCHMARK_MAP = {
+    sc["scenario_id"].strip().upper(): sc["input"]
+    for sc in BENCHMARK_SCENARIOS
 }
 
 @router.post("/run", response_model=PaymentAnalysisResponse)
@@ -27,13 +21,9 @@ def run_benchmark_scenario(
     db: Session = Depends(get_db_session)
 ):
     """Executes a benchmark attack or legitimate test scenario by scenario ID."""
-    sc_id = payload.scenario_id.upper()
-    
-    # Check if exact benchmark mapping exists
-    if sc_id in BENCHMARK_SCENARIO_PAYLOADS:
-        return analyze_payment(BENCHMARK_SCENARIO_PAYLOADS[sc_id], db)
+    sc_id = payload.scenario_id.strip().upper()
 
-    # Fallback to DB transaction lookup if present
+    # 1. Search in historical Transaction database table
     txn = db.query(Transaction).filter(Transaction.scenario_id == sc_id).first()
     if txn:
         req_obj = txn.payment_request
@@ -48,18 +38,37 @@ def run_benchmark_scenario(
         )
         return analyze_payment(req, db)
 
-    # Check scenario entity
-    sc = db.query(Scenario).filter(Scenario.scenario_id == sc_id).first()
-    if not sc:
-        raise HTTPException(status_code=404, detail=f"Scenario '{sc_id}' not found.")
+    # 2. Search in BENCHMARK_SCENARIOS definitions
+    if sc_id in BENCHMARK_MAP:
+        inp = BENCHMARK_MAP[sc_id]
+        req = PaymentAnalysisRequest(
+            customer_id=inp["customer_id"],
+            amount=inp["amount"],
+            recipient_id=inp["recipient_id"],
+            claimed_merchant=inp.get("claimed_merchant"),
+            payment_note=inp.get("payment_note"),
+            url=inp.get("url"),
+            channel=inp.get("channel", "UPI")
+        )
+        return analyze_payment(req, db)
 
-    # Ultimate fallback payload
-    default_req = PaymentAnalysisRequest(
-        customer_id="CUST-001",
-        amount=8742.00,
-        recipient_id="RCP-004",
-        claimed_merchant="BESCOM Electricity",
-        payment_note="URGENT: Disconnection notice",
-        url="http://elect-pay-bill.top/pay"
+    # 3. Search in Scenario entity table
+    sc = db.query(Scenario).filter(Scenario.scenario_id == sc_id).first()
+    if sc and hasattr(sc, "input_data") and sc.input_data:
+        inp = sc.input_data
+        req = PaymentAnalysisRequest(
+            customer_id=inp.get("customer_id", "CUST-001"),
+            amount=inp.get("amount", 1000.00),
+            recipient_id=inp.get("recipient_id", "RCP-001"),
+            claimed_merchant=inp.get("claimed_merchant"),
+            payment_note=inp.get("payment_note"),
+            url=inp.get("url"),
+            channel=inp.get("channel", "UPI")
+        )
+        return analyze_payment(req, db)
+
+    # 4. If scenario ID is not found in any source -> Raise HTTP 404 (NO SILENT FALLBACK TO ANOTHER SCENARIO)
+    raise HTTPException(
+        status_code=404,
+        detail=f"Scenario '{payload.scenario_id}' not found."
     )
-    return analyze_payment(default_req, db)

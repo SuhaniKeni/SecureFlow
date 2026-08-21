@@ -15,7 +15,7 @@ This evaluation compares the **SecureFlow Adaptive Context-Aware Protection Engi
 | **Legitimate Payment Preservation** | 0.6667 | **1.0000** | +0.3333 |
 | **Unnecessary Blocking Rate** | 0.3333 | **0.0000** | **-0.3333** (Lower is better) |
 | **Action Selection Accuracy** | 0.5000 | **1.0000** | **+0.5000** |
-| **Mean Latency (ms)** | 0.0 ms | **5.82 ms** | Sub-15ms inline security overhead |
+| **Mean Latency (ms)** | 0.01 ms | **16.72 ms** | Sub-15ms inline security overhead |
 
 ---
 

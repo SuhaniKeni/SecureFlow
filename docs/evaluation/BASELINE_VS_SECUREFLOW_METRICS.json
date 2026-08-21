@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-21 14:43:02",
+  "timestamp": "2026-08-21 16:39:02",
   "benchmark_400_results": {
     "baseline": {
       "system": "Baseline",
@@ -27,7 +27,7 @@
         "mean": 0.0,
         "median": 0.0,
         "p95": 0.0,
-        "p99": 0.0
+        "p99": 0.01
       }
     },
     "secureflow": {
@@ -53,10 +53,10 @@
         "unnecessary_blocking_rate": 0.0
       },
       "latency_ms": {
-        "mean": 15.17,
-        "median": 12.4,
-        "p95": 18.68,
-        "p99": 36.69
+        "mean": 16.81,
+        "median": 14.77,
+        "p95": 23.59,
+        "p99": 74.69
       }
     }
   },
@@ -113,10 +113,10 @@
         "unnecessary_blocking_rate": 0.0
       },
       "latency_ms": {
-        "mean": 37.64,
-        "median": 33.63,
-        "p95": 92.4,
-        "p99": 157.96
+        "mean": 32.83,
+        "median": 31.15,
+        "p95": 43.43,
+        "p99": 117.95
       }
     }
   }
