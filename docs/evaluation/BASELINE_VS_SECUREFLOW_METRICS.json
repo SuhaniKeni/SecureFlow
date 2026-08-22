@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-22 16:00:24",
+  "timestamp": "2026-08-22 16:19:34",
   "benchmark_400_results": {
     "baseline": {
       "system": "Baseline",
@@ -24,10 +24,10 @@
         "unnecessary_blocking_rate": 0.21
       },
       "latency_ms": {
-        "mean": 0.0,
-        "median": 0.0,
-        "p95": 0.0,
-        "p99": 0.0
+        "mean": 0.01,
+        "median": 0.01,
+        "p95": 0.01,
+        "p99": 0.01
       }
     },
     "secureflow": {
@@ -53,10 +53,10 @@
         "unnecessary_blocking_rate": 0.0
       },
       "latency_ms": {
-        "mean": 14.57,
-        "median": 12.75,
-        "p95": 18.94,
-        "p99": 53.47
+        "mean": 19.18,
+        "median": 13.1,
+        "p95": 41.06,
+        "p99": 131.19
       }
     }
   },
@@ -87,7 +87,7 @@
         "mean": 0.0,
         "median": 0.0,
         "p95": 0.0,
-        "p99": 0.01
+        "p99": 0.0
       }
     },
     "secureflow": {
@@ -113,10 +113,10 @@
         "unnecessary_blocking_rate": 0.0
       },
       "latency_ms": {
-        "mean": 13.29,
-        "median": 12.47,
-        "p95": 17.4,
-        "p99": 22.79
+        "mean": 15.17,
+        "median": 13.76,
+        "p95": 21.62,
+        "p99": 32.49
       }
     }
   }
