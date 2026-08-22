@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-22 15:57:14",
+  "timestamp": "2026-08-22 16:00:24",
   "benchmark_400_results": {
     "baseline": {
       "system": "Baseline",
@@ -27,13 +27,13 @@
         "mean": 0.0,
         "median": 0.0,
         "p95": 0.0,
-        "p99": 0.01
+        "p99": 0.0
       }
     },
     "secureflow": {
       "system": "SecureFlow",
       "total_scenarios": 400,
-      "action_accuracy": 0.8575,
+      "action_accuracy": 0.835,
       "binary_metrics": {
         "precision": 1.0,
         "recall": 1.0,
@@ -48,15 +48,15 @@
       "friction_metrics": {
         "legitimate_total": 200,
         "legitimate_preservation_rate": 1.0,
-        "unnecessary_verification_rate": 0.705,
+        "unnecessary_verification_rate": 0.75,
         "unnecessary_holding_rate": 0.0,
         "unnecessary_blocking_rate": 0.0
       },
       "latency_ms": {
-        "mean": 14.16,
-        "median": 12.65,
+        "mean": 14.57,
+        "median": 12.75,
         "p95": 18.94,
-        "p99": 23.68
+        "p99": 53.47
       }
     }
   },
@@ -87,7 +87,7 @@
         "mean": 0.0,
         "median": 0.0,
         "p95": 0.0,
-        "p99": 0.0
+        "p99": 0.01
       }
     },
     "secureflow": {
@@ -113,10 +113,10 @@
         "unnecessary_blocking_rate": 0.0
       },
       "latency_ms": {
-        "mean": 17.83,
-        "median": 12.97,
-        "p95": 18.82,
-        "p99": 65.2
+        "mean": 13.29,
+        "median": 12.47,
+        "p95": 17.4,
+        "p99": 22.79
       }
     }
   }
