@@ -72,3 +72,16 @@ class CustomerHistoryResponse(BaseModel):
     account_age_days: int
     total_transactions: int
     transaction_history: List[Dict[str, Any]]
+
+class SecurityPipelineResponse(BaseModel):
+    transaction_id: str
+    execution_id: str
+    action: str
+    customer_explanation: Dict[str, Any]
+    ops_explanation: Dict[str, Any]
+    evidence_bundle: Dict[str, Any]
+    protection_response: Dict[str, Any]
+    execution_trace: List[Dict[str, Any]]
+    total_latency_ms: float
+    audit_trail: Dict[str, Any]
+

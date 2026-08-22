@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from secureflow.db.database import init_db, engine
 from secureflow.api.routes.payments import router as payments_router
+from secureflow.api.routes.security import router as security_router
 from secureflow.api.routes.events import router as events_router
 from secureflow.api.routes.entities import router as entities_router
 from secureflow.api.routes.scenarios import router as scenarios_router
@@ -34,6 +35,7 @@ app.add_middleware(
 
 # Register Router Modules
 app.include_router(payments_router)
+app.include_router(security_router)
 app.include_router(events_router)
 app.include_router(entities_router)
 app.include_router(scenarios_router)
