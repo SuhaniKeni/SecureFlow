@@ -192,19 +192,6 @@ body {
 .nav-icon-btn:hover {
   background-color: #f1f5f9;
   color: var(--text-main);
-}
-
-.nav-notification-dot {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  width: 8px;
-  height: 8px;
-  background-color: #e11d48;
-  border-radius: 50%;
-  border: 2px solid #ffffff;
-}
-
 .user-profile-btn {
   display: flex;
   align-items: center;
@@ -486,3 +473,166 @@ td {
     gap: 16px;
   }
 }
+
+/* Animations */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.pulse-loading {
+  animation: pulse-subtle 1.5s ease-in-out infinite;
+}
+
+/* Agent Timeline Component Styles */
+.agent-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  margin: 16px 0;
+}
+
+.agent-timeline-item {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.agent-timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.agent-timeline-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--border-color);
+}
+
+.agent-timeline-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  border: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.agent-timeline-icon.completed {
+  background-color: var(--bg-allow);
+  border-color: var(--color-allow);
+  color: var(--color-allow);
+}
+
+.agent-timeline-icon.running {
+  background-color: var(--bg-verify);
+  border-color: var(--color-verify);
+  color: var(--color-verify);
+}
+
+.agent-timeline-icon.failed {
+  background-color: var(--bg-block);
+  border-color: var(--color-block);
+  color: var(--color-block);
+}
+
+.agent-timeline-content {
+  flex: 1;
+  background-color: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+}
+
+.agent-timeline-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.agent-name {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text-main);
+}
+
+.agent-latency {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.agent-summary {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Simulation Stepper Notice */
+.security-stepper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+
+.stepper-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.stepper-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.stepper-dot.done {
+  background-color: var(--color-allow);
+  color: #ffffff;
+}
+
+.stepper-dot.active {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+}
+
+.stepper-dot.pending {
+  background-color: #e2e8f0;
+  color: #94a3b8;
+}
+

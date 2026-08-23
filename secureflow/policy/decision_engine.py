@@ -79,9 +79,10 @@ class ProtectionDecisionEngine:
                 }
             }
 
-        # POLICY RULE 3: VERIFY (Moderate concern: unusual amount, new recipient, or moderate scam text)
+        # POLICY RULE 3: VERIFY (Moderate concern: unusual amount, new recipient, domain mismatch, or moderate scam text)
         if (
-            ("unusual_amount_pattern" in signals)
+            ("domain_mismatch" in signals)
+            or ("unusual_amount_pattern" in signals)
             or ("newly_observed_recipient" in signals)
             or ("unverified_destination" in signals)
             or ("moderate_scam_indicator" in signals)

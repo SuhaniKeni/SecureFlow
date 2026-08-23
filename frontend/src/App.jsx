@@ -5,16 +5,16 @@ import {
   AlertTriangle, 
   BarChart3, 
   FlaskConical, 
-  Bell, 
   ChevronDown, 
   Menu, 
   X,
-  ShieldCheck
+  Bot
 } from 'lucide-react';
 
 import CustomerCheckout from './components/CustomerCheckout';
 import OpsDashboard from './components/OpsDashboard';
 import AttackSimulator from './components/AttackSimulator';
+import RiskIntelligence from './components/RiskIntelligence';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('overview');
@@ -54,11 +54,11 @@ export default function App() {
           <div className="logo-badge">SF</div>
           <div className="brand-title-group">
             <span className="brand-name">SECUREFLOW</span>
-            <span className="brand-subtitle">Adaptive Security for Digital Payments</span>
+            <span className="brand-subtitle">Adaptive Agentic Security for Digital Payments</span>
           </div>
         </div>
 
-        {/* CENTER: Navigation Links (Exact Order Mandated) */}
+        {/* CENTER: Navigation Links */}
         <nav className="nav-center-menu">
           <button 
             className={`nav-link ${activeTab === 'overview' ? 'active' : ''}`}
@@ -73,7 +73,7 @@ export default function App() {
             onClick={() => handleNavClick('checkout')}
           >
             <CreditCard size={17} />
-            <span>Customer Checkout</span>
+            <span>Secure Checkout</span>
           </button>
 
           <button 
@@ -101,13 +101,8 @@ export default function App() {
           </button>
         </nav>
 
-        {/* RIGHT: Notifications & User Profile */}
+        {/* RIGHT: User Profile */}
         <div className="nav-right-controls">
-          <button className="nav-icon-btn" title="Notifications">
-            <Bell size={19} />
-            <span className="nav-notification-dot"></span>
-          </button>
-
           <button className="user-profile-btn">
             <div className="avatar-circle">RA</div>
             <div className="user-info">
@@ -142,7 +137,7 @@ export default function App() {
           onClick={() => handleNavClick('checkout')}
         >
           <CreditCard size={17} />
-          <span>Customer Checkout</span>
+          <span>Secure Checkout</span>
         </button>
 
         <button 
@@ -179,7 +174,7 @@ export default function App() {
               <div style={{ marginBottom: '24px' }}>
                 <h2 style={{ fontSize: '24px', fontWeight: 800, letterSpacing: '-0.03em' }}>Good afternoon</h2>
                 <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>
-                  Here is what is happening across your payment protection layer.
+                  Live protection status across your adaptive payment security layer.
                 </p>
               </div>
 
@@ -210,10 +205,60 @@ export default function App() {
                 </div>
               </div>
 
+              {/* Agentic Security Activity Feed */}
+              <div className="card" style={{ marginBottom: '24px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
+                  <Bot size={20} color="var(--primary-blue)" />
+                  <h3 style={{ fontSize: '16px', fontWeight: 700 }}>Agentic Security Activity Pipeline</h3>
+                </div>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px' }}>
+                  <div style={{ padding: '14px', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-color)', backgroundColor: '#f8fafc' }}>
+                    <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--primary-blue)', textTransform: 'uppercase', marginBottom: '4px' }}>
+                      Merchant Security Agent
+                    </div>
+                    <div style={{ fontSize: '13px', fontWeight: 600, color: '#0f172a' }}>Identity Verification</div>
+                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '2px' }}>
+                      Cross-references claimed payee names against verified corporate domains & VPAs.
+                    </div>
+                  </div>
+
+                  <div style={{ padding: '14px', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-color)', backgroundColor: '#f8fafc' }}>
+                    <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--primary-blue)', textTransform: 'uppercase', marginBottom: '4px' }}>
+                      Investigation Agent
+                    </div>
+                    <div style={{ fontSize: '13px', fontWeight: 600, color: '#0f172a' }}>Deep Evidence Retrieval</div>
+                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '2px' }}>
+                      Fetches customer baseline z-score history, recipient account age & transaction velocity.
+                    </div>
+                  </div>
+
+                  <div style={{ padding: '14px', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-color)', backgroundColor: '#f8fafc' }}>
+                    <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--primary-blue)', textTransform: 'uppercase', marginBottom: '4px' }}>
+                      Evidence Synthesis Agent
+                    </div>
+                    <div style={{ fontSize: '13px', fontWeight: 600, color: '#0f172a' }}>Multi-Signal Fusion</div>
+                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '2px' }}>
+                      Synthesizes NLP intent, URL phishing vectors, and baseline anomalies.
+                    </div>
+                  </div>
+
+                  <div style={{ padding: '14px', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-color)', backgroundColor: '#f8fafc' }}>
+                    <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--primary-blue)', textTransform: 'uppercase', marginBottom: '4px' }}>
+                      Security Response Agent
+                    </div>
+                    <div style={{ fontSize: '13px', fontWeight: 600, color: '#0f172a' }}>Deterministic Enforcement</div>
+                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '2px' }}>
+                      Executes deterministic protection action & generates dual audience explanations.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Recent Activity Table */}
               <div className="card">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-                  <h3 style={{ fontSize: '16px', fontWeight: 700 }}>Recent Protection Activity</h3>
+                  <h3 style={{ fontSize: '16px', fontWeight: 700 }}>Recent Protection Events</h3>
                   <button className="btn btn-secondary" onClick={() => setActiveTab('events')}>View All Events</button>
                 </div>
 
@@ -226,7 +271,7 @@ export default function App() {
                         <tr>
                           <th>Event ID</th>
                           <th>Transaction ID</th>
-                          <th>Action</th>
+                          <th>Policy Action</th>
                           <th>Explanation Summary</th>
                           <th>Timestamp</th>
                         </tr>
@@ -253,93 +298,14 @@ export default function App() {
             </div>
           )}
 
-          {/* TAB 2: CUSTOMER CHECKOUT */}
+          {/* TAB 2: SECURE CHECKOUT */}
           {activeTab === 'checkout' && <CustomerCheckout />}
 
           {/* TAB 3: PROTECTION EVENTS */}
           {activeTab === 'events' && <OpsDashboard />}
 
           {/* TAB 4: RISK INTELLIGENCE & ANALYTICS */}
-          {activeTab === 'intelligence' && (
-            <div>
-              <div style={{ marginBottom: '24px' }}>
-                <h2 style={{ fontSize: '24px', fontWeight: 800 }}>Protection vs. Friction Intelligence</h2>
-                <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>Empirical evaluation metrics and multi-engine breakdown.</p>
-              </div>
-
-              <div className="kpi-grid">
-                <div className="kpi-card">
-                  <div className="kpi-title">Scam Protection Rate</div>
-                  <div className="kpi-value" style={{ color: 'var(--color-allow)' }}>100%</div>
-                  <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>Scam attacks caught</div>
-                </div>
-
-                <div className="kpi-card">
-                  <div className="kpi-title">Unnecessary Block Rate</div>
-                  <div className="kpi-value" style={{ color: 'var(--color-allow)' }}>0.0%</div>
-                  <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>Legitimate users blocked</div>
-                </div>
-
-                <div className="kpi-card">
-                  <div className="kpi-title">Mean Engine Latency</div>
-                  <div className="kpi-value">1.15 ms</div>
-                  <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>Feature engine loop</div>
-                </div>
-
-                <div className="kpi-card">
-                  <div className="kpi-title">Full API Latency</div>
-                  <div className="kpi-value">12.19 ms</div>
-                  <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>Includes SQLite persistence</div>
-                </div>
-              </div>
-
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                <div className="card">
-                  <h3 style={{ fontSize: '16px', fontWeight: 700, marginBottom: '12px' }}>Detection Engine Hierarchy</h3>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                    <div style={{ padding: '12px', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-sm)', backgroundColor: '#f8fafc' }}>
-                      <div style={{ fontWeight: 600 }}>1. URL Intelligence Engine</div>
-                      <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Gradient Boosting Model ($F_1 = 0.9924$)</div>
-                    </div>
-                    <div style={{ padding: '12px', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-sm)', backgroundColor: '#f8fafc' }}>
-                      <div style={{ fontWeight: 600 }}>2. Scam-Context NLP Engine</div>
-                      <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>TF-IDF + Naive Bayes ($F_1 = 0.8950$)</div>
-                    </div>
-                    <div style={{ padding: '12px', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-sm)', backgroundColor: '#f8fafc' }}>
-                      <div style={{ fontWeight: 600 }}>3. Customer Behavior Engine</div>
-                      <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Statistical $Z$-Score Anomaly & Velocity</div>
-                    </div>
-                    <div style={{ padding: '12px', border: '1px solid var(--border-color)', borderRadius: 'var(--radius-sm)', backgroundColor: '#f8fafc' }}>
-                      <div style={{ fontWeight: 600 }}>4. Merchant Consistency Engine</div>
-                      <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Multi-Factor Identity & Verified Domain Matching</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="card">
-                  <h3 style={{ fontSize: '16px', fontWeight: 700, marginBottom: '12px' }}>Protection Policy Actions</h3>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px', borderRadius: 'var(--radius-sm)', backgroundColor: 'var(--bg-allow)' }}>
-                      <span style={{ fontWeight: 600, color: 'var(--color-allow)' }}>ALLOW</span>
-                      <span style={{ fontSize: '13px' }}>Normal payment context</span>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px', borderRadius: 'var(--radius-sm)', backgroundColor: 'var(--bg-verify)' }}>
-                      <span style={{ fontWeight: 600, color: 'var(--color-verify)' }}>VERIFY</span>
-                      <span style={{ fontSize: '13px' }}>Unusual amount or new recipient</span>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px', borderRadius: 'var(--radius-sm)', backgroundColor: 'var(--bg-hold)' }}>
-                      <span style={{ fontWeight: 600, color: 'var(--color-hold)' }}>HOLD</span>
-                      <span style={{ fontSize: '13px' }}>Significant uncertain mismatch</span>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px', borderRadius: 'var(--radius-sm)', backgroundColor: 'var(--bg-block)' }}>
-                      <span style={{ fontWeight: 600, color: 'var(--color-block)' }}>BLOCK</span>
-                      <span style={{ fontSize: '13px' }}>Phishing domain or identity mismatch</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
+          {activeTab === 'intelligence' && <RiskIntelligence />}
 
           {/* TAB 5: ATTACK SIMULATOR */}
           {activeTab === 'simulator' && <AttackSimulator />}

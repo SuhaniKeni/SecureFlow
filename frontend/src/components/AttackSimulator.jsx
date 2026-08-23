@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, CheckCircle, AlertTriangle, RefreshCw } from 'lucide-react';
+import { Play, CheckCircle, AlertTriangle, RefreshCw, ArrowRight, ShieldCheck } from 'lucide-react';
 
 const BENCHMARK_SCENARIOS = [
   { scenario_id: "SCN-001", name: "Legitimate Recurring Electricity Payment", expected_action: "ALLOW", amount: 1450, payee: "BESCOM Electricity" },
@@ -16,9 +16,11 @@ const BENCHMARK_SCENARIOS = [
 
 export default function AttackSimulator() {
   const [running, setRunning] = useState(false);
+  const [activeScenarioId, setActiveScenarioId] = useState(null);
   const [results, setResults] = useState({});
 
   const runSingleScenario = async (scId) => {
+    setActiveScenarioId(scId);
     try {
       const res = await fetch('/api/scenarios/run', {
         method: 'POST',
@@ -28,7 +30,9 @@ export default function AttackSimulator() {
       const data = await res.json();
       setResults((prev) => ({ ...prev, [scId]: data }));
     } catch (err) {
-      console.error(err);
+      console.error("Scenario execution error:", err);
+    } finally {
+      setActiveScenarioId(null);
     }
   };
 
@@ -44,8 +48,10 @@ export default function AttackSimulator() {
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px', flexWrap: 'wrap', gap: '16px' }}>
         <div>
-          <h2 style={{ fontSize: '24px', fontWeight: 800 }}>SecureFlow Scenario Simulation Lab</h2>
-          <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>Benchmark attack vectors and edge cases against the active security pipeline.</p>
+          <h2 style={{ fontSize: '24px', fontWeight: 800 }}>Agentic Security Benchmark & Simulation Lab</h2>
+          <p style={{ color: 'var(--text-muted)', fontSize: '14px' }}>
+            Execute real benchmark scenarios across the multi-agent detection, investigation, and deterministic policy pipeline.
+          </p>
         </div>
 
         <button 
@@ -55,7 +61,7 @@ export default function AttackSimulator() {
           style={{ padding: '12px 22px', fontSize: '14px' }}
         >
           {running ? <RefreshCw size={16} className="spin" /> : <Play size={16} />}
-          {running ? 'Executing All Scenarios...' : 'Run All 10 Scenarios'}
+          {running ? 'Executing Pipeline Benchmarks...' : 'Run All 10 Scenarios'}
         </button>
       </div>
 
@@ -63,19 +69,20 @@ export default function AttackSimulator() {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
         {BENCHMARK_SCENARIOS.map((sc) => {
           const res = results[sc.scenario_id];
+          const isCurrentRunning = activeScenarioId === sc.scenario_id;
           const actualAction = res?.action;
           const isMatch = actualAction && actualAction === sc.expected_action;
 
           return (
             <div key={sc.scenario_id} className="card" style={{ padding: '20px' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', marginBottom: res ? '16px' : '0' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', marginBottom: (res || isCurrentRunning) ? '16px' : '0' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                   <div style={{ fontWeight: 700, fontFamily: 'monospace', color: 'var(--primary-blue)', backgroundColor: 'var(--primary-blue-light)', padding: '4px 8px', borderRadius: 'var(--radius-sm)', fontSize: '12px' }}>
                     {sc.scenario_id}
                   </div>
                   <div>
                     <h3 style={{ fontSize: '16px', fontWeight: 700 }}>{sc.name}</h3>
-                    <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Target Action: <strong style={{ color: 'var(--text-main)' }}>{sc.expected_action}</strong></div>
+                    <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Target Expected Policy Action: <strong style={{ color: 'var(--text-main)' }}>{sc.expected_action}</strong></div>
                   </div>
                 </div>
 
@@ -89,48 +96,81 @@ export default function AttackSimulator() {
                   <button 
                     className="btn btn-secondary" 
                     onClick={() => runSingleScenario(sc.scenario_id)}
-                    style={{ padding: '8px 14px', fontSize: '13px' }}
+                    disabled={running || isCurrentRunning}
+                    style={{ padding: '8px 14px', fontSize: '13px', gap: '6px' }}
                   >
-                    Run Scenario
+                    {isCurrentRunning ? <RefreshCw size={14} className="spin" /> : <Play size={14} />}
+                    {isCurrentRunning ? 'Analyzing...' : 'Run Scenario'}
                   </button>
                 </div>
               </div>
 
-              {/* Execution Result Render */}
-              {res && (
-                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '16px', marginTop: '12px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px', backgroundColor: '#f8fafc', padding: '16px', borderRadius: 'var(--radius-sm)' }}>
-                  <div>
-                    <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '6px' }}>Input Context</div>
-                    <div style={{ fontSize: '13px', fontWeight: 600 }}>₹{sc.amount.toLocaleString('en-IN')} to {sc.payee}</div>
-                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px', fontFamily: 'monospace' }}>TXN: {res.transaction_id}</div>
-                  </div>
-
-                  <div>
-                    <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '6px' }}>Detected Evidence</div>
-                    <div style={{ fontSize: '12px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                      {res.evidence_bundle?.evidence_items?.map((item, idx) => (
-                        <div key={idx} style={{ color: 'var(--primary-blue-hover)' }}>• {item.description}</div>
-                      )) || <div style={{ color: 'var(--color-allow)' }}>• Clean payment baseline.</div>}
+              {/* Live Pipeline Flow Graphic */}
+              {(res || isCurrentRunning) && (
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '16px', marginTop: '12px', backgroundColor: '#f8fafc', padding: '16px', borderRadius: 'var(--radius-sm)' }}>
+                  {/* Step Progress Visual Bar */}
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', marginBottom: '16px', flexWrap: 'wrap', fontSize: '11px', fontWeight: 700 }}>
+                    <div style={{ padding: '6px 10px', borderRadius: 'var(--radius-sm)', background: '#ffffff', border: '1px solid #cbd5e1', color: '#0f172a' }}>
+                      1. INPUT RECEIVED
+                    </div>
+                    <ArrowRight size={14} color="#94a3b8" />
+                    <div style={{ padding: '6px 10px', borderRadius: 'var(--radius-sm)', background: res ? '#dbeafe' : '#f1f5f9', border: '1px solid #93c5fd', color: '#1e40af' }}>
+                      2. DETECTION ENGINES
+                    </div>
+                    <ArrowRight size={14} color="#94a3b8" />
+                    <div style={{ padding: '6px 10px', borderRadius: 'var(--radius-sm)', background: res ? '#dbeafe' : '#f1f5f9', border: '1px solid #93c5fd', color: '#1e40af' }}>
+                      3. MERCHANT & INVESTIGATION AGENTS
+                    </div>
+                    <ArrowRight size={14} color="#94a3b8" />
+                    <div style={{ padding: '6px 10px', borderRadius: 'var(--radius-sm)', background: res ? '#dbeafe' : '#f1f5f9', border: '1px solid #93c5fd', color: '#1e40af' }}>
+                      4. EVIDENCE SYNTHESIS
+                    </div>
+                    <ArrowRight size={14} color="#94a3b8" />
+                    <div style={{ padding: '6px 10px', borderRadius: 'var(--radius-sm)', background: res ? (res.action === 'ALLOW' ? '#dcfce7' : res.action === 'BLOCK' ? '#ffe4e6' : '#fef3c7') : '#f1f5f9', border: '1px solid #cbd5e1', color: '#0f172a' }}>
+                      5. POLICY & RESPONSE ({res ? res.action : '...'})
                     </div>
                   </div>
 
-                  <div>
-                    <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '6px' }}>Benchmark Outcome</div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                      {isMatch ? (
-                        <span style={{ color: 'var(--color-allow)', fontWeight: 700, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                          <CheckCircle size={16} /> 100% Action Match
-                        </span>
-                      ) : (
-                        <span style={{ color: 'var(--color-block)', fontWeight: 700, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                          <AlertTriangle size={16} /> Action Mismatch
-                        </span>
-                      )}
+                  {res && (
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px' }}>
+                      <div>
+                        <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '6px' }}>Payment Context</div>
+                        <div style={{ fontSize: '13px', fontWeight: 600 }}>₹{sc.amount.toLocaleString('en-IN')} to {sc.payee}</div>
+                        <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px', fontFamily: 'monospace' }}>TXN: {res.transaction_id}</div>
+                      </div>
+
+                      <div>
+                        <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '6px' }}>Synthesized Evidence</div>
+                        <div style={{ fontSize: '12px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                          {res.evidence_bundle?.evidence_items?.length > 0 ? (
+                            res.evidence_bundle.evidence_items.map((item, idx) => (
+                              <div key={idx} style={{ color: '#1d4ed8' }}>• {item.description}</div>
+                            ))
+                          ) : (
+                            <div style={{ color: 'var(--color-allow)' }}>• Clean transaction context baseline.</div>
+                          )}
+                        </div>
+                      </div>
+
+                      <div>
+                        <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '6px' }}>Benchmark Outcome</div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                          {isMatch ? (
+                            <span style={{ color: 'var(--color-allow)', fontWeight: 700, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                              <CheckCircle size={16} /> 100% Action Match
+                            </span>
+                          ) : (
+                            <span style={{ color: 'var(--color-block)', fontWeight: 700, fontSize: '13px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                              <AlertTriangle size={16} /> Action Mismatch
+                            </span>
+                          )}
+                        </div>
+                        <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>
+                          {res.customer_explanation?.why || res.reasons?.[0]}
+                        </div>
+                      </div>
                     </div>
-                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>
-                      {res.customer_explanation?.why || res.reasons?.[0]}
-                    </div>
-                  </div>
+                  )}
                 </div>
               )}
             </div>

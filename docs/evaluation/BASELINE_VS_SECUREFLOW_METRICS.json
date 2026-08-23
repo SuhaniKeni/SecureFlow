@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-22 16:23:48",
+  "timestamp": "2026-08-23 11:50:42",
   "benchmark_400_results": {
     "baseline": {
       "system": "Baseline",
@@ -33,7 +33,7 @@
     "secureflow": {
       "system": "SecureFlow",
       "total_scenarios": 400,
-      "action_accuracy": 0.835,
+      "action_accuracy": 0.73,
       "binary_metrics": {
         "precision": 1.0,
         "recall": 1.0,
@@ -48,15 +48,15 @@
       "friction_metrics": {
         "legitimate_total": 200,
         "legitimate_preservation_rate": 1.0,
-        "unnecessary_verification_rate": 0.75,
+        "unnecessary_verification_rate": 0.96,
         "unnecessary_holding_rate": 0.0,
         "unnecessary_blocking_rate": 0.0
       },
       "latency_ms": {
-        "mean": 60.61,
-        "median": 44.52,
-        "p95": 116.95,
-        "p99": 224.84
+        "mean": 27.21,
+        "median": 21.68,
+        "p95": 56.47,
+        "p99": 104.74
       }
     }
   },
@@ -84,10 +84,10 @@
         "unnecessary_blocking_rate": 0.0
       },
       "latency_ms": {
-        "mean": 0.01,
+        "mean": 0.0,
         "median": 0.0,
-        "p95": 0.01,
-        "p99": 0.02
+        "p95": 0.0,
+        "p99": 0.0
       }
     },
     "secureflow": {
@@ -113,10 +113,10 @@
         "unnecessary_blocking_rate": 0.0
       },
       "latency_ms": {
-        "mean": 52.7,
-        "median": 42.94,
-        "p95": 110.61,
-        "p99": 152.73
+        "mean": 27.95,
+        "median": 22.36,
+        "p95": 35.38,
+        "p99": 80.74
       }
     }
   }
