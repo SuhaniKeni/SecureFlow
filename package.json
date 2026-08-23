@@ -1,0 +1,12 @@
+{
+  "name": "secureflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SecureFlow: Adaptive AI Security Layer for Digital Payments",
+  "scripts": {
+    "start": "npx -y concurrently \"python -m uvicorn secureflow.api.main:app --host 127.0.0.1 --port 8000\" \"npm --prefix frontend run dev\"",
+    "dev": "npx -y concurrently \"python -m uvicorn secureflow.api.main:app --host 127.0.0.1 --port 8000\" \"npm --prefix frontend run dev\"",
+    "backend": "python -m uvicorn secureflow.api.main:app --host 127.0.0.1 --port 8000",
+    "frontend": "npm --prefix frontend run dev"
+  }
+}
