@@ -95,24 +95,19 @@ Compares SecureFlow against a **Legacy Baseline** (naive amount > ₹5,000 thres
 
 ## 14. How to Run Locally
 
-### One-Line Quick Start (Starts Backend & Frontend Concurrently):
+### Quick Start (Python Environment):
 ```bash
-npm start
-```
-
-### Manual Quick Start:
-```bash
-# 1. Install Python dependencies
+# 1. Install dependencies
 pip install -r requirements.txt
 
 # 2. Run test suite
 python -m pytest tests/
 
-# 3. Start Backend API
-python -m uvicorn secureflow.api.main:app --host 127.0.0.1 --port 8000
+# 3. Run end-to-end verification
+python scripts/run_e2e_verification.py
 
-# 4. Start Frontend UI (in a new terminal)
-npm --prefix frontend run dev
+# 4. Start FastAPI server
+uvicorn secureflow.api.main:app --reload --port 8000
 ```
 
 ### Docker Quick Start:
