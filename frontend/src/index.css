@@ -192,6 +192,8 @@ body {
 .nav-icon-btn:hover {
   background-color: #f1f5f9;
   color: var(--text-main);
+}
+
 .user-profile-btn {
   display: flex;
   align-items: center;
