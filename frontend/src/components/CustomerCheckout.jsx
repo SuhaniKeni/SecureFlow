@@ -58,7 +58,20 @@ export default function CustomerCheckout() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [errorState, setErrorState] = useState(null);
-  const [verifiedState, setVerifiedState] = useState(false);
+
+  // Multi-step step-up verification workflow state
+  const [verifyStep, setVerifyStep] = useState('INIT'); // 'INIT' | 'OTP' | 'CONFIRM' | 'SUCCESS' | 'CANCELLED' | 'LOCKED'
+  const [otpInput, setOtpInput] = useState('');
+  const [otpError, setOtpError] = useState('');
+  const [failedAttempts, setFailedAttempts] = useState(0);
+  const DEMO_OTP_CODE = '482913';
+
+  const resetVerifyWorkflow = () => {
+    setVerifyStep('INIT');
+    setOtpInput('');
+    setOtpError('');
+    setFailedAttempts(0);
+  };
 
   const handleSelectPreset = (e) => {
     const idx = e.target.value;
@@ -75,7 +88,7 @@ export default function CustomerCheckout() {
     });
     setResult(null);
     setErrorState(null);
-    setVerifiedState(false);
+    resetVerifyWorkflow();
   };
 
   const handlePayNow = async (e) => {
@@ -83,7 +96,7 @@ export default function CustomerCheckout() {
     setLoading(true);
     setResult(null);
     setErrorState(null);
-    setVerifiedState(false);
+    resetVerifyWorkflow();
 
     try {
       // Consume REAL Step 5 Agentic Security Pipeline endpoint
@@ -117,7 +130,7 @@ export default function CustomerCheckout() {
   const resetForm = () => {
     setResult(null);
     setErrorState(null);
-    setVerifiedState(false);
+    resetVerifyWorkflow();
   };
 
   return (
@@ -379,52 +392,253 @@ export default function CustomerCheckout() {
               </div>
             )}
 
-            {/* VERIFY STATE */}
+            {/* VERIFY STATE — Multi-Step Step-Up Verification Workflow */}
             {result.action === 'VERIFY' && (
               <div style={{ padding: '24px', borderRadius: 'var(--radius-md)', backgroundColor: '#eff6ff', border: '1px solid #bfdbfe' }}>
-                {!verifiedState ? (
+                
+                {/* STAGE 0: INITIAL PAUSE & NOTICE */}
+                {verifyStep === 'INIT' && (
                   <>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
                       <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: '#dbeafe', color: '#2563eb', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                         <ShieldCheck size={24} />
                       </div>
                       <div>
-                        <div style={{ fontSize: '12px', fontWeight: 700, color: '#2563eb', textTransform: 'uppercase' }}>Verification Required</div>
+                        <div style={{ fontSize: '12px', fontWeight: 700, color: '#2563eb', textTransform: 'uppercase' }}>Verification Required — Payment Paused</div>
                         <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#0f172a' }}>We noticed something unusual about this payment</h3>
                       </div>
                     </div>
 
-                    <div style={{ fontSize: '14px', color: '#334155', marginBottom: '16px', lineHeight: 1.5 }}>
-                      Your payment of <strong>₹{parseFloat(formData.amount || 0).toLocaleString('en-IN')}</strong> to <strong>{formData.claimed_merchant}</strong> has NOT been completed yet.
+                    <div style={{ backgroundColor: '#ffffff', padding: '16px', borderRadius: 'var(--radius-sm)', border: '1px solid #bfdbfe', marginBottom: '16px' }}>
+                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', fontSize: '13px', color: '#334155' }}>
+                        <div>
+                          <div style={{ fontSize: '11px', color: '#64748b', textTransform: 'uppercase', fontWeight: 700 }}>Merchant</div>
+                          <div style={{ fontWeight: 700, fontSize: '14px', color: '#0f172a' }}>{formData.claimed_merchant}</div>
+                        </div>
+                        <div>
+                          <div style={{ fontSize: '11px', color: '#64748b', textTransform: 'uppercase', fontWeight: 700 }}>Amount</div>
+                          <div style={{ fontWeight: 800, fontSize: '16px', color: '#2563eb' }}>₹{parseFloat(formData.amount || 0).toLocaleString('en-IN')}</div>
+                        </div>
+                        <div>
+                          <div style={{ fontSize: '11px', color: '#64748b', textTransform: 'uppercase', fontWeight: 700 }}>Recipient VPA</div>
+                          <div style={{ fontWeight: 600, fontFamily: 'monospace' }}>{formData.recipient_id}</div>
+                        </div>
+                        <div>
+                          <div style={{ fontSize: '11px', color: '#64748b', textTransform: 'uppercase', fontWeight: 700 }}>Transaction ID</div>
+                          <div style={{ fontWeight: 600, fontFamily: 'monospace', color: '#64748b' }}>{result.transaction_id}</div>
+                        </div>
+                      </div>
                     </div>
 
-                    <div style={{ padding: '14px', backgroundColor: '#ffffff', borderRadius: 'var(--radius-sm)', border: '1px solid #bfdbfe', fontSize: '13px', color: '#1e40af', marginBottom: '20px' }}>
-                      For your protection, please verify the payment details before continuing.
+                    <div style={{ padding: '12px 14px', backgroundColor: '#ffffff', borderRadius: 'var(--radius-sm)', border: '1px solid #bfdbfe', fontSize: '13px', color: '#1e40af', marginBottom: '16px' }}>
+                      For your protection, please confirm your identity using simulated step-up verification before this payment can proceed.
                     </div>
 
-                    <div style={{ fontSize: '11px', color: '#64748b', fontStyle: 'italic', marginBottom: '16px' }}>
-                      Demo verification — simulated 2FA prompt
+                    <div style={{ fontSize: '11px', color: '#64748b', fontStyle: 'italic', marginBottom: '20px' }}>
+                      Demo environment — simulated step-up authentication
                     </div>
 
                     <div style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end' }}>
-                      <button className="btn btn-secondary" onClick={resetForm}>
-                        Cancel
+                      <button className="btn btn-secondary" onClick={() => setVerifyStep('CANCELLED')}>
+                        Cancel Payment
                       </button>
-                      <button className="btn btn-primary" onClick={() => setVerifiedState(true)}>
-                        Verify Payment
+                      <button className="btn btn-primary" onClick={() => setVerifyStep('OTP')}>
+                        Continue to Verification
                       </button>
                     </div>
                   </>
-                ) : (
+                )}
+
+                {/* STAGE 1: STEP-UP DEMO OTP CODE INPUT */}
+                {verifyStep === 'OTP' && (
+                  <>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '16px', paddingBottom: '12px', borderBottom: '1px solid #bfdbfe' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                        <ShieldCheck size={22} color="#2563eb" />
+                        <div>
+                          <div style={{ fontSize: '11px', fontWeight: 700, color: '#2563eb', textTransform: 'uppercase' }}>Step 1 of 2</div>
+                          <div style={{ fontSize: '16px', fontWeight: 700, color: '#0f172a' }}>Enter Verification Code</div>
+                        </div>
+                      </div>
+                      <span style={{ fontSize: '12px', fontWeight: 700, color: '#2563eb', backgroundColor: '#dbeafe', padding: '3px 10px', borderRadius: '12px' }}>
+                        ₹{parseFloat(formData.amount || 0).toLocaleString('en-IN')}
+                      </span>
+                    </div>
+
+                    <form onSubmit={(e) => {
+                      e.preventDefault();
+                      if (otpInput.trim() === DEMO_OTP_CODE) {
+                        setOtpError('');
+                        setVerifyStep('CONFIRM');
+                      } else {
+                        const newFail = failedAttempts + 1;
+                        setFailedAttempts(newFail);
+                        if (newFail >= 3) {
+                          setVerifyStep('LOCKED');
+                        } else {
+                          setOtpError(`Verification code incorrect. Please try again. (${3 - newFail} attempts remaining)`);
+                        }
+                      }
+                    }}>
+                      <div className="form-group" style={{ marginBottom: '16px' }}>
+                        <label className="form-label" style={{ fontWeight: 700 }}>
+                          Enter the 6-digit verification code:
+                        </label>
+                        <input 
+                          type="text" 
+                          maxLength={6}
+                          className="form-input" 
+                          style={{ fontSize: '20px', letterSpacing: '0.3em', textAlign: 'center', fontWeight: 700, fontFamily: 'monospace' }}
+                          placeholder="------"
+                          value={otpInput}
+                          onChange={(e) => {
+                            setOtpInput(e.target.value.replace(/\D/g, ''));
+                            setOtpError('');
+                          }}
+                          autoFocus
+                          required
+                        />
+                      </div>
+
+                      {/* Demo Panel Hint Box */}
+                      <div style={{ padding: '12px 14px', backgroundColor: '#ffffff', borderRadius: 'var(--radius-sm)', border: '1px dashed #2563eb', marginBottom: '16px' }}>
+                        <div style={{ fontSize: '11px', fontWeight: 700, color: '#2563eb', textTransform: 'uppercase', marginBottom: '4px' }}>
+                          Demo environment panel
+                        </div>
+                        <div style={{ fontSize: '13px', color: '#1e293b' }}>
+                          Use the demo verification code shown below: <strong style={{ fontFamily: 'monospace', fontSize: '15px', color: '#2563eb', padding: '2px 8px', background: '#eff6ff', borderRadius: '4px', border: '1px solid #bfdbfe' }}>482913</strong>
+                        </div>
+                      </div>
+
+                      {/* Error Banner */}
+                      {otpError && (
+                        <div style={{ padding: '10px 14px', backgroundColor: '#fef2f2', border: '1px solid #fecaca', color: '#dc2626', borderRadius: 'var(--radius-sm)', fontSize: '13px', marginBottom: '16px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                          <AlertCircle size={16} />
+                          {otpError}
+                        </div>
+                      )}
+
+                      <div style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end' }}>
+                        <button type="button" className="btn btn-secondary" onClick={() => setVerifyStep('CANCELLED')}>
+                          Cancel
+                        </button>
+                        <button type="submit" className="btn btn-primary">
+                          Verify Code
+                        </button>
+                      </div>
+                    </form>
+                  </>
+                )}
+
+                {/* STAGE 2: FINAL TWO-STAGE CONFIRMATION */}
+                {verifyStep === 'CONFIRM' && (
+                  <>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', paddingBottom: '12px', borderBottom: '1px solid #bfdbfe' }}>
+                      <div style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: '#dcfce7', color: '#15803d', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                        <CheckCircle size={22} />
+                      </div>
+                      <div>
+                        <div style={{ fontSize: '11px', fontWeight: 700, color: '#15803d', textTransform: 'uppercase' }}>Step 2 of 2 — Verification Code Validated</div>
+                        <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a' }}>Confirm & Authorize Payment</h3>
+                      </div>
+                    </div>
+
+                    <div style={{ backgroundColor: '#ffffff', padding: '16px', borderRadius: 'var(--radius-sm)', border: '1px solid #bfdbfe', marginBottom: '16px' }}>
+                      <div style={{ fontSize: '13px', color: '#64748b', marginBottom: '8px' }}>You are about to complete the following payment:</div>
+                      <div style={{ fontSize: '16px', fontWeight: 800, color: '#0f172a' }}>{formData.claimed_merchant}</div>
+                      <div style={{ fontSize: '24px', fontWeight: 800, color: '#2563eb', margin: '4px 0' }}>₹{parseFloat(formData.amount || 0).toLocaleString('en-IN')}</div>
+                      <div style={{ fontSize: '12px', color: '#64748b', fontFamily: 'monospace' }}>Recipient VPA: {formData.recipient_id}</div>
+                    </div>
+
+                    <div style={{ fontSize: '13px', color: '#334155', marginBottom: '20px', lineHeight: 1.4 }}>
+                      Click <strong>Confirm & Continue</strong> to finalize this simulated payment transaction.
+                    </div>
+
+                    <div style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end' }}>
+                      <button className="btn btn-secondary" onClick={() => setVerifyStep('CANCELLED')}>
+                        Cancel
+                      </button>
+                      <button className="btn btn-primary" onClick={() => setVerifyStep('SUCCESS')}>
+                        Confirm & Continue
+                      </button>
+                    </div>
+                  </>
+                )}
+
+                {/* STAGE 3: VERIFICATION SUCCESS & COMPLETED */}
+                {verifyStep === 'SUCCESS' && (
                   <div style={{ textAlign: 'center', padding: '16px 0' }}>
-                    <CheckCircle size={36} color="#059669" style={{ marginBottom: '12px' }} />
-                    <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#0f172a', marginBottom: '4px' }}>Verification Successful</h3>
-                    <p style={{ fontSize: '13px', color: '#475569', marginBottom: '16px' }}>Payment authorized successfully following multi-factor verification.</p>
-                    <button className="btn btn-primary" onClick={resetForm}>
+                    <div style={{ width: '56px', height: '56px', borderRadius: '50%', backgroundColor: '#dcfce7', color: '#059669', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px' }}>
+                      <CheckCircle size={32} />
+                    </div>
+                    <div style={{ fontSize: '12px', fontWeight: 700, color: '#059669', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '4px' }}>
+                      Verification Successful
+                    </div>
+                    <h3 style={{ fontSize: '22px', fontWeight: 800, color: '#0f172a', marginBottom: '8px' }}>
+                      Payment Approved
+                    </h3>
+                    <div style={{ fontSize: '26px', fontWeight: 800, color: '#059669', marginBottom: '4px' }}>
+                      ₹{parseFloat(formData.amount || 0).toLocaleString('en-IN')}
+                    </div>
+                    <div style={{ fontSize: '14px', fontWeight: 600, color: '#475569', marginBottom: '16px' }}>
+                      {formData.claimed_merchant}
+                    </div>
+
+                    <div style={{ padding: '12px 16px', backgroundColor: '#ffffff', borderRadius: 'var(--radius-sm)', border: '1px solid #cbd5e1', fontSize: '13px', color: '#334155', margin: '0 auto 24px', maxWidth: '440px' }}>
+                      SecureFlow verified your step-up authentication code and authorized the transaction.
+                    </div>
+
+                    <button className="btn btn-primary" style={{ padding: '10px 32px' }} onClick={resetForm}>
                       Done
                     </button>
                   </div>
                 )}
+
+                {/* STAGE CANCELLED: USER CANCELLED VERIFICATION */}
+                {verifyStep === 'CANCELLED' && (
+                  <div style={{ padding: '16px', backgroundColor: '#ffffff', borderRadius: 'var(--radius-sm)', border: '1px solid #fecdd3', textAlign: 'center' }}>
+                    <XCircle size={36} color="#e11d48" style={{ marginBottom: '12px' }} />
+                    <h3 style={{ fontSize: '18px', fontWeight: 800, color: '#0f172a', marginBottom: '4px' }}>
+                      Payment Not Completed
+                    </h3>
+                    <p style={{ fontSize: '14px', color: '#475569', marginBottom: '16px' }}>
+                      Your payment of <strong>₹{parseFloat(formData.amount || 0).toLocaleString('en-IN')}</strong> was cancelled and has NOT been processed.
+                    </p>
+
+                    <div style={{ display: 'flex', gap: '12px', justifyContent: 'center' }}>
+                      <button className="btn btn-secondary" onClick={() => {
+                        setVerifyStep('INIT');
+                        setFailedAttempts(0);
+                        setOtpInput('');
+                        setOtpError('');
+                      }}>
+                        Try Again
+                      </button>
+                      <button className="btn btn-primary" onClick={resetForm}>
+                        Return to Checkout
+                      </button>
+                    </div>
+                  </div>
+                )}
+
+                {/* STAGE LOCKED: ATTEMPTS EXCEEDED */}
+                {verifyStep === 'LOCKED' && (
+                  <div style={{ padding: '16px', backgroundColor: '#fff1f2', borderRadius: 'var(--radius-sm)', border: '1px solid #fecdd3', textAlign: 'center' }}>
+                    <ShieldAlert size={36} color="#dc2626" style={{ marginBottom: '12px' }} />
+                    <div style={{ fontSize: '12px', fontWeight: 700, color: '#dc2626', textTransform: 'uppercase' }}>Security Locked</div>
+                    <h3 style={{ fontSize: '18px', fontWeight: 800, color: '#0f172a', marginBottom: '8px' }}>
+                      Verification Attempts Exceeded
+                    </h3>
+                    <p style={{ fontSize: '14px', color: '#475569', marginBottom: '16px' }}>
+                      Maximum verification attempts (3) exceeded. For your protection, this payment has been cancelled.
+                    </p>
+
+                    <button className="btn btn-secondary" onClick={resetForm}>
+                      Return to Checkout
+                    </button>
+                  </div>
+                )}
+
               </div>
             )}
 
